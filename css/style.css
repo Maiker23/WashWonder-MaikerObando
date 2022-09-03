@@ -91,7 +91,7 @@ nav a {
 
 .header__contenido-nav a:hover {
     color: #ec1492;
-    font-weight: bold;    
+    font-weight: bold;
 }
 
 .nav_icon-menu {
@@ -400,7 +400,7 @@ nav a {
     animation: gradient_shop 8s linear infinite;
 }
 
-@keyframes gradient_shop {
+/* @keyframes gradient_shop {
     0% {
         background-position: 0 0;
     }
@@ -408,7 +408,7 @@ nav a {
     50% {
         background-position: 20rem 0;
     }
-}
+} */
 
 #titulo__wondershop-h3 {
     font-size: 1rem;
@@ -770,21 +770,22 @@ footer {
 }
 
 .line-gradient {
-    background: var(#ec1492);
-    background-image: linear-gradient(to left, #E63E8E, #6D4795, #4A77BA, #3CBDE4, #56B584);
+    /* por si no soporta gradient el navegador */
+    background-color: #482464;
+    /* background-image: linear-gradient(to left, #E63E8E, #6D4795, #4A77BA, #3CBDE4, #56B584); */
     height: 6px;
     animation: gradient_footer 5s linear infinite;
 }
 
-@keyframes gradient_footer {
+/* @keyframes gradient_footer {
     0% {
-        background-position: 0 0;       
+        background-position: 0 0;
     }
 
     50% {
-        background-position: 100vw 0;          
+        background-position: 100vw 0;
     }
-}
+} */
 
 
 /* whatsapp */
