@@ -1,0 +1,64 @@
+// ----------------------------------------
+// Proyect by Maiker Obando - Wash Wonder 
+// -----------------------------------------
+
+
+@font-face {
+    font-family: "Montserrat-Ligth";
+    src: url("../assets/fonts/Montserrat-Light.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("../assets/fonts/Montserrat-Bold.ttf");
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "Montserrat-Black";
+    src: url("../assets/fonts/Montserrat-Black.ttf");
+}
+
+* {padding: 0;
+    margin: 0;
+    box-sizing:
+    border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat-Ligth"; color: white;
+    background-color: #141414;
+}
+
+p {
+    color: white;}
+
+h1 {
+    color: white;
+    font-family: "Montserrat-Black";
+    text-transform: uppercase;
+}
+
+h2 {
+    color: white;
+    font-family: "Montserrat-Black"
+}
+
+h3 {
+    color: white;
+    font-family: "Montserrat-Bold"
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+

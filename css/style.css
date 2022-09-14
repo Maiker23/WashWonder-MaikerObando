@@ -1,0 +1,803 @@
+@font-face {
+  font-family: "Montserrat-Ligth";
+  src: url("../assets/fonts/Montserrat-Light.ttf");
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../assets/fonts/Montserrat-Bold.ttf");
+  font-style: bold; }
+
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url("../assets/fonts/Montserrat-Black.ttf"); }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Montserrat-Ligth";
+  color: white;
+  background-color: #141414; }
+
+p {
+  color: white; }
+
+h1 {
+  color: white;
+  font-family: "Montserrat-Black";
+  text-transform: uppercase; }
+
+h2 {
+  color: white;
+  font-family: "Montserrat-Black"; }
+
+h3 {
+  color: white;
+  font-family: "Montserrat-Bold"; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+/* banner principal */
+.main__banner img {
+  width: 100%; }
+
+/* Titulo - main index */
+#titulo_main {
+  text-align: center;
+  padding-block: 5rem; }
+
+#titulo_h1 {
+  font-size: 3rem; }
+
+#titulo_h2 {
+  font-size: 1.5rem;
+  color: #E63E8E; }
+
+/* Icon Section */
+.icon__section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
+  justify-items: center;
+  gap: 0; }
+
+.icon__section img {
+  width: 50px;
+  margin: 15px; }
+
+.background-servicios {
+  background-color: #50B58B;
+  width: 100%;
+  text-align: center;
+  cursor: pointer; }
+
+.background-shop {
+  background-color: #4D75B8;
+  width: 100%;
+  text-align: center;
+  cursor: pointer; }
+
+.background-cursos {
+  background-color: #623883;
+  width: 100%;
+  text-align: center;
+  cursor: pointer; }
+
+.background-contacto {
+  background-color: #E63E8E;
+  width: 100%;
+  text-align: center;
+  cursor: pointer; }
+
+/* Tarjetas de Servicios */
+.index__titulo-servicios {
+  text-align: center;
+  font-size: 1.6rem;
+  padding-bottom: 3rem; }
+
+.index__titulo-servicios h2 {
+  color: #50B58B; }
+
+#index__servicios {
+  margin-block: 7rem; }
+
+.index__banner-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 1600px;
+  margin: 0 auto; }
+
+.index__banner-CardServicios {
+  margin-bottom: 30px;
+  transition: all 0.6s ease; }
+
+.index__banner-CardServicios:hover {
+  transform: translateY(35px);
+  border: #E63E8E 1px solid;
+  box-shadow: 0 5px 20px 5px black; }
+
+/* Valoraciones */
+.comentarios {
+  margin-top: 1px;
+  padding: 50px 10px;
+  background: #0f0f0f; }
+
+.comentarios__title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 50px auto;
+  color: #db2b85ff; }
+
+/* tarjetas de comentarios */
+.comentario__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto; }
+
+.card__comentario {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border: #444444 1px solid;
+  border-radius: 20px;
+  text-align: center;
+  transition: border 0.2s ease; }
+
+.card__comentario:hover {
+  border: #623883 1px solid;
+  box-shadow: 0 10px 20px -5px black;
+  background-color: black; }
+
+.card__comentario h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #50B58B; }
+
+.card__comentario img {
+  width: 180px;
+  margin: 15px auto; }
+
+.card__estrellas {
+  scale: 70%; }
+
+/* boton  */
+.boton__comentarios {
+  background-color: #fdfdfd;
+  width: 230px;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 120px;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin: 45px auto; }
+
+.boton__comentarios:hover {
+  background-color: #ec1492;
+  font-size: 1.22rem; }
+
+.boton__comentarios-texto {
+  color: #623883; }
+
+.title-cursos {
+  font-size: 3rem;
+  text-align: center;
+  padding: 0px 3px;
+  margin-top: 40px; }
+
+#cursos-color {
+  color: #50B58B; }
+
+.section_cursos {
+  display: grid;
+  max-width: auto;
+  margin: auto 6%;
+  margin-bottom: 100px; }
+
+.div-background {
+  background-color: #e2e2e2;
+  max-height: 800px;
+  padding: 20px;
+  margin: 25px 0;
+  border: #000000 2px solid;
+  transition: all 0.3s; }
+
+.div-background:hover {
+  background-color: white;
+  border: #ec1492 2px solid; }
+
+.curso__card-contenido {
+  margin-left: 15px; }
+
+.curso__card {
+  display: flex; }
+
+.curso__card img {
+  max-width: 400px; }
+
+.curso__card h2 {
+  color: #000000; }
+
+.curso__card h4 {
+  font-family: "Montserrat-Bold";
+  font-weight: bold;
+  color: #444444;
+  font-size: 1rem;
+  margin-top: 10px; }
+
+.curso__card p {
+  color: #000000;
+  margin-top: 10px; }
+
+.curso__card-boton {
+  background-color: #50B58B;
+  width: 190px;
+  padding: 12px 0;
+  text-align: center;
+  border-radius: 120px;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 0.8rem;
+  margin-top: 15px; }
+
+.curso__card-boton:hover {
+  background-color: #ec1492;
+  font-size: 0.85rem; }
+
+.curso__card-boton h3 {
+  color: #ffffff; }
+
+#titulo__wondershop {
+  text-align: center;
+  padding-block: 2rem; }
+
+#titulo__wondershop-h1 {
+  font-size: 5rem;
+  line-height: 5.5rem; }
+
+#shop-style {
+  background-image: linear-gradient(to right, #f93c97, #6D4795, #f93c97);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient_shop 8s linear infinite; }
+
+@keyframes gradient_shop {
+  0% {
+    background-position: 0 0; }
+  50% {
+    background-position: 20rem 0; } }
+
+#titulo__wondershop-h3 {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  color: #50B58B;
+  margin-block: 15px; }
+
+/* Barra de naveacion */
+.productos_menu_nav {
+  position: sticky;
+  top: 6rem;
+  z-index: 3; }
+
+.productos_menu_nav ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  max-width: 1000px;
+  margin: 0px auto;
+  text-align: center;
+  margin-block: 30px; }
+
+.productos_menu_nav li {
+  background-color: #0e0e0e;
+  /* background-image: linear-gradient(#6D4795, #722096); */
+  padding: 18px 2px;
+  border-radius: 2px;
+  border: #ec1492 1px solid;
+  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.6);
+  transition: all 0.2s ease; }
+
+.productos_menu_nav li:hover {
+  background-color: #482464;
+  transform: translateY(8px); }
+
+.productos_menu_nav a {
+  font-size: 1rem;
+  color: white;
+  font-weight: bold; }
+
+.title_productos h2 {
+  border-bottom: #50B58B 1px solid;
+  width: auto;
+  text-align: center;
+  padding: 12px;
+  margin: 0 auto;
+  font-size: 1.4rem; }
+
+/* tarjetas de productos */
+.productos_section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 5px; }
+
+.card__productos {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: #000000 2px solid;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 1px 1px 5px 1px black;
+  transition: all 0.3s; }
+
+.card__productos:hover {
+  border: #E63E8E 2px solid;
+  scale: 110%;
+  box-shadow: 1px 1px 20px 10px black; }
+
+.card__productos-marca {
+  font-size: 1.7rem;
+  line-height: 1.5rem;
+  color: #222222;
+  padding: 4px;
+  margin-top: 12px; }
+
+.card__productos-header p {
+  color: #000000;
+  font-weight: 1000;
+  padding: 4px; }
+
+.card__productos-foto {
+  width: 100%;
+  padding: 10px; }
+
+.card__productos-precio {
+  color: #ec1492; }
+
+.card__productos-unidad {
+  color: #0e0e0e;
+  font-size: 0.9rem;
+  margin-bottom: 8px; }
+
+.card__productos-logo-mercadolibre {
+  background-color: #FFE900;
+  padding: 10px  10px;
+  border-radius: 0px 0px 5px 5px; }
+
+.card__productos-logo-mercadolibre img {
+  width: 40%; }
+
+.section-contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;
+  margin: 0px auto;
+  align-items: center; }
+
+.div-contacto {
+  text-align: center; }
+
+.div-contacto img {
+  width: 10rem;
+  margin: 20px; }
+
+.div-formulario h2 {
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 25px;
+  margin-top: 15px;
+  color: #50B58B; }
+
+.formulario-datos form {
+  display: block;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 50px; }
+
+.formulario-datos textarea {
+  font-family: "Montserrat-Ligth";
+  font-size: 0,8rem;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #000000;
+  outline: none;
+  margin: 10px;
+  background-color: #d5d5d5;
+  transition: all 0.4s; }
+
+.formulario-datos textarea:focus {
+  border: 2px solid #ec1492;
+  background-color: white; }
+
+.formulario-datos input {
+  font-family: "Montserrat-Ligth";
+  font-size: 0,8rem;
+  padding: 10px;
+  border: 2px solid #000000;
+  outline: none;
+  width: 100%;
+  margin: 10px;
+  background-color: #d5d5d5;
+  transition: all 0.4s; }
+
+.formulario-datos input:focus {
+  border: #ec1492 2px solid;
+  background-color: white; }
+
+#button-enviar {
+  width: 100%;
+  background-color: #56B584;
+  color: white;
+  font-family: "Montserrat-Bold";
+  border: 1px solid #000000;
+  outline: none;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 10px; }
+
+#button-enviar:hover {
+  background-color: #482464; }
+
+.title-cursos {
+  font-size: 3rem;
+  text-align: center;
+  padding: 0px 3px;
+  margin-top: 40px; }
+
+#cursos-color {
+  color: #50B58B; }
+
+.section_cursos {
+  display: grid;
+  max-width: auto;
+  margin: auto 6%;
+  margin-bottom: 100px; }
+
+.div-background {
+  background-color: #e2e2e2;
+  max-height: 800px;
+  padding: 20px;
+  margin: 25px 0;
+  border: #000000 2px solid;
+  transition: all 0.3s; }
+
+.div-background:hover {
+  background-color: white;
+  border: #ec1492 2px solid; }
+
+.curso__card-contenido {
+  margin-left: 15px; }
+
+.curso__card {
+  display: flex; }
+
+.curso__card img {
+  max-width: 400px; }
+
+.curso__card h2 {
+  color: #000000; }
+
+.curso__card h4 {
+  font-family: "Montserrat-Bold";
+  font-weight: bold;
+  color: #444444;
+  font-size: 1rem;
+  margin-top: 10px; }
+
+.curso__card p {
+  color: #000000;
+  margin-top: 10px; }
+
+.curso__card-boton {
+  background-color: #50B58B;
+  width: 190px;
+  padding: 12px 0;
+  text-align: center;
+  border-radius: 120px;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 0.8rem;
+  margin-top: 15px; }
+
+.curso__card-boton:hover {
+  background-color: #ec1492;
+  font-size: 0.85rem; }
+
+.curso__card-boton h3 {
+  color: #ffffff; }
+
+.header {
+  border-bottom: #ec1492 5px solid;
+  background-color: rgba(255, 255, 255, 0.94);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 8px 15px;
+  box-shadow: 0 30px 50px -10px black; }
+
+.header__contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+nav a {
+  color: #623883;
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-left: 20px; }
+
+.header__contenido-nav a:hover {
+  color: #ec1492;
+  font-weight: bold; }
+
+.nav_icon-menu {
+  width: 38px;
+  margin-left: 20px;
+  display: none; }
+
+.header__contenido-logo img {
+  width: 120px; }
+
+.header__contenido-nav {
+  display: flex; }
+
+footer {
+  background-color: #111111; }
+
+.line-gradient {
+  /* por si no soporta gradient el navegador */
+  background-color: #482464;
+  background-image: linear-gradient(to left, #E63E8E, #6D4795, #4A77BA, #3CBDE4, #56B584);
+  height: 5px;
+  animation: gradient_footer 5s linear infinite; }
+
+@keyframes gradient_footer {
+  0% {
+    background-position: 0 0; }
+  50% {
+    background-position: 100vw 0; } }
+
+.footer_logoWW {
+  display: block;
+  text-align: center;
+  padding: 5rem 2rem; }
+  .footer_logoWW img {
+    width: 250px; }
+
+.rrss {
+  display: block;
+  text-align: center; }
+  .rrss img {
+    width: 85px;
+    padding-inline: 12px;
+    transition: all 0.2s; }
+  .rrss img:hover {
+    filter: brightness(100%) saturate(0); }
+
+.DerechosReservados {
+  color: white;
+  text-align: center;
+  font-size: 0.95rem;
+  padding: 3vh 1vh;
+  margin-bottom: 0.5rem;
+  line-height: 1.5rem; }
+  .DerechosReservados .maikerobando-color {
+    color: #50B58B; }
+
+.tag_marcas-background {
+  padding: 50px 20px;
+  background-color: #000000; }
+
+.tag_marcas {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/imagenes/background_gotas-02-02.png"); }
+  .tag_marcas img {
+    padding: 50px; }
+
+.ff-ww-Montserrat-black {
+  font-family: "Montserrat-Black"; }
+
+.ff-ww-Montserrat-bold {
+  font-family: "Montserrat-Bold"; }
+
+.ff-ww-Montserrat-ligth {
+  font-family: "Montserrat-Ligth"; }
+
+.font-weight {
+  font-weight: 1000; }
+
+.bg_color-ww-fucsia {
+  background-color: #ec1492; }
+
+.bg_color-ww-fucsia-2 {
+  background-color: #E63E8E; }
+
+.bg_color-ww-verde {
+  background-color: #50B58B; }
+
+.bg_color-ww-morado {
+  background-color: #623883; }
+
+.bg_color-ww-azul {
+  background-color: #4D75B8; }
+
+.text_color-ww-white {
+  color: #ffffff; }
+
+.text_color-ww-fucsia {
+  color: #ec1492; }
+
+.text_color-ww-verde {
+  color: #50B58B; }
+
+.text_color-ww-morado {
+  color: #623883; }
+
+.text_color-ww-azul {
+  color: #4D75B8; }
+
+.bc-ww-fucsia {
+  border-color: #ec1492; }
+
+.bc-ww-verde {
+  border-color: #50B58B; }
+
+.bc-ww-morado {
+  border-color: #623883; }
+
+.bc-ww-azul {
+  border-color: #4D75B8; }
+
+.bg_gradient-ww-fucsia {
+  background-image: linear-gradient(to left, #E63E8E, #9e35ac); }
+
+.bg_gradient-ww-fucsia-top {
+  background-image: linear-gradient(to top, #E63E8E, #9625a5); }
+
+@media (max-width: 1000px) {
+  .comentario__content {
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 15px;
+    max-width: auto;
+    margin: 0 auto; }
+  .productos_section {
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1rem;
+    max-width: 1000px;
+    padding: 50px 20px; }
+  .section_cursos {
+    margin: auto 1%;
+    margin-bottom: 90px; } }
+
+@media (max-width: 835px) {
+  .header__contenido-nav li {
+    display: none; }
+  .header__contenido-logo img {
+    width: 100px; }
+  .nav_icon-menu {
+    display: flex; }
+  .tag_marcas {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./assets/imagenes/background_gotas-02-02.png"); }
+  /* PAGE / Wonder Shop */
+  #titulo__wondershop-h1 {
+    font-size: 4rem;
+    line-height: 4rem; }
+  #titulo__wondershop-h3 {
+    font-size: 1rem;
+    letter-spacing: 0.1rem; }
+  /* PAGE / Contacto */
+  .section-contacto {
+    grid-template-columns: repeat(1, 1fr); }
+  .whatsapp-qr {
+    display: none; }
+  .whatsapp-icon {
+    display: flex;
+    position: fixed;
+    z-index: 5;
+    bottom: 8px;
+    right: 8px; }
+  /* PAGE / Cursos */
+  .section_cursos {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px; }
+  .curso__card-contenido {
+    margin-left: 0px;
+    margin-top: 10px; }
+  .curso__card {
+    display: grid; }
+  .curso__card img {
+    max-width: 100%; }
+  .curso__card-boton {
+    margin: 0 auto;
+    margin-top: 25px; } }
+
+@media (max-width: 720px) {
+  .productos_menu_nav li:hover {
+    transform: translateY(0px); }
+  .card__productos:hover {
+    scale: 100%;
+    box-shadow: 1px 1px 20px 10px black; }
+  .title-cursos {
+    font-size: 2.5rem;
+    padding: 2px 3px;
+    margin-top: 35px; } }
+
+@media (max-width: 500px) {
+  .icon__section {
+    grid-template-columns: repeat(2, 1fr); }
+  #titulo_h1 {
+    font-size: 2.4rem; }
+  #titulo_h2 {
+    margin-inline: 9px; }
+  .card__comentario {
+    padding: 30px;
+    border: #747474 1px solid;
+    border-radius: 18px; }
+  /* PAGE / Wonder Shop */
+  #titulo__wondershop {
+    padding-block: 0;
+    padding-top: 2rem; }
+  #titulo__wondershop-h1 {
+    font-size: 2.6rem;
+    line-height: 2.5rem; }
+  #titulo__wondershop-h3 {
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    margin: 1.3rem 0.2rem; }
+  /* Barra de naveacion */
+  .productos_menu_nav {
+    position: static;
+    z-index: 0; }
+  .productos_menu_nav ul {
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    margin-block: 30px; }
+  .productos_menu_nav li {
+    background-color: #623883;
+    padding: 18px 2px;
+    border-radius: 2px;
+    border: #000000 1px solid;
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.6);
+    transition: all 0.2s ease; }
+  .productos_menu_nav li:hover {
+    background-color: #482464;
+    transform: translateY(0px); }
+  .productos_menu_nav a {
+    font-size: 1rem;
+    color: white;
+    font-weight: bold; }
+  /* PAGE / Contacto */
+  .formulario-datos form {
+    max-width: 90%; }
+  .tag_marcas img {
+    padding: 5vh;
+    width: 100%; } }

@@ -1,0 +1,86 @@
+// ----------------------------------------
+// Proyect by Maiker Obando - Wash Wonder 
+// -----------------------------------------
+
+
+.section-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    margin: 0px auto;
+    align-items: center;
+}
+
+.div-contacto {
+    text-align: center;
+}
+
+.div-contacto img{
+    width: 10rem;
+    margin: 20px;
+}
+
+.div-formulario h2 {
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 25px;
+    margin-top: 15px;
+    color: #50B58B;
+}
+
+.formulario-datos form {
+    display: block;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.formulario-datos textarea {
+    font-family: "Montserrat-Ligth";
+    font-size: 0,8rem;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000000;
+    outline: none;
+    margin: 10px;
+    background-color: #d5d5d5;
+    transition: all 0.4s;
+}
+
+.formulario-datos textarea:focus {
+    border: 2px solid #ec1492;
+    background-color: white;
+}
+
+.formulario-datos input {
+    font-family: "Montserrat-Ligth";
+    font-size: 0,8rem;
+    padding: 10px;
+    border: 2px solid #000000;
+    outline: none;
+    width: 100%;
+    margin: 10px;
+    background-color: #d5d5d5;
+    transition: all 0.4s;
+}
+
+.formulario-datos input:focus {
+    border: #ec1492 2px solid;
+    background-color: white;
+}
+
+#button-enviar {
+    width: 100%;
+    background-color:#56B584;
+    color: white;
+    font-family: "Montserrat-Bold";
+    border: 1px solid #000000;
+    outline: none;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#button-enviar:hover {
+    background-color: #482464;
+}
