@@ -1,0 +1,51 @@
+// ----------------------------------------
+// Proyect by Maiker Obando - Wash Wonder 
+// -----------------------------------------
+
+
+.whatsapp-qr {
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    z-index: 5;    
+    animation: whatsapp_qr 3s both;
+    
+    @keyframes whatsapp_qr {
+        0% {        
+            right: -200px;
+        }
+        80% {       
+            right: -200px;
+        }
+        95% {        
+            right: 12px;
+        }
+        100% {      
+            right: 8px;
+        }
+    }
+}
+
+.whatsapp-icon {
+    display: none;
+    scale: 0%;
+    animation: whatsapp 2s both; 
+    
+    @keyframes whatsapp {
+        0% {        
+            scale: 0%;
+        }
+        80% {       
+            scale: 0%;
+        }
+        95% {        
+            scale: 105%;
+        }
+        100% {      
+            scale: 100%;
+        }
+    }
+}
+
+
+

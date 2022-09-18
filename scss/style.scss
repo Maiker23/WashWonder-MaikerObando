@@ -2,22 +2,20 @@
 // Proyect by Maiker Obando - Wash Wonder 
 // -----------------------------------------
 
+@import "./components/variables";
 
 @import "./scss/components/global";
 
-@import "./components/variables";
-
 @import "./pages/index";
-@import "./pages/cursos";
+@import "./pages/servicios";
 @import "./pages/wonder-shop";
 @import "./pages/contactos";
 @import "./pages/cursos";
 
+@import "./components/framework-ww";
 @import "./components/header";
 @import "./components/footer";
 @import "./components/tag-marcas";
-@import "./components/framework-ww";
+@import "./components/whatsapp";
 
 @import "./components/medias-queries";
-
-

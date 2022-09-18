@@ -6,17 +6,20 @@
 .tag_marcas-background {
     padding: 50px 20px;
     background-color: #000000;
-}
-
-.tag_marcas {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
-    align-items: center;
-    background-image: url("./assets/imagenes/background_gotas-02-02.png");
-
-    img {
-        padding: 50px;
+    background-image: url("/assets/imagenes/backgorund_ww-fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;   
+    background-position: center;
+    background-attachment: fixed;
+    
+    .tag_marcas {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;        
+    
+        img {
+            padding: 50px;
+        }
     }
 }
-

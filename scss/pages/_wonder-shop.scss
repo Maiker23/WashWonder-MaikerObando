@@ -3,149 +3,161 @@
 // -----------------------------------------
 
 
+// titulo principal
 #titulo__wondershop {
     text-align: center;
     padding-block: 2rem;
-}
 
-#titulo__wondershop-h1 {
-    font-size: 5rem;
-    line-height: 5.5rem;
-}
+    &-h1 {
+        font-size: 5rem;
+        line-height: 5.5rem;
 
-#shop-style {
-    background-image: linear-gradient(to right, #f93c97, #6D4795,#f93c97);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradient_shop 8s linear infinite;
-}
-
-@keyframes gradient_shop {
-    0% {
-        background-position: 0 0;
+        #shop-style {
+            background-image: linear-gradient(to right, #f93c97, #6D4795,#f93c97);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient_shop 8s linear infinite;
+        
+            @keyframes gradient_shop {
+                0% {
+                    background-position: 0 0;
+                }
+                50% {
+                    background-position: 20rem 0;
+                }
+            }
+        }  
     }
-
-    50% {
-        background-position: 20rem 0;
+    
+    &-h3 {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        color: #50B58B;
+        margin-block: 15px ;
     }
 }
+// titulo principal
 
-#titulo__wondershop-h3 {
-    font-size: 1rem;
-    letter-spacing: 0.1rem;
-    color: #50B58B;
-    margin-block: 15px ;
-}
 
-/* Barra de naveacion */
+
+/* Barra de naveacion de articulos */
 .productos_menu_nav {
     position: sticky;
     top: 6rem;
     z-index: 3;
+
+    & ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        max-width: 1000px;
+        margin: 0px auto;
+        text-align: center;
+        margin-block: 30px;
+         
+        & li {
+            background-color: #0e0e0e;
+            padding: 18px 2px;
+            border-radius: 5px;
+            border: #ec1492 1px solid;
+            box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.6);
+            transition: all 0.2s ease;
+
+            &:hover {
+                background-color: #482464;
+                transform: translateY(6px);
+            }
+
+            & a {
+                font-size: 1rem;
+                color: white;
+                font-weight: bold;
+            }     
+        }
+    } 
+}
+/* Barra de naveacion de articulos */
+
+
+.title_productos {
+    border-bottom: #353535 1px solid;
+    margin: auto 5%;
+    
+    & h2 {   
+        text-align: center;
+        padding: 12px;
+        margin: 0 auto;
+        font-size: 1.4rem;
+    }
 }
 
-.productos_menu_nav ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-    max-width: 1000px;
-    margin: 0px auto;
-    text-align: center;
-    margin-block: 30px;
-}
-
-.productos_menu_nav li {
-    background-color: #0e0e0e;
-    /* background-image: linear-gradient(#6D4795, #722096); */
-    padding: 18px 2px;
-    border-radius: 2px;
-    border: #ec1492 1px solid;
-    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.6);
-    transition: all 0.2s ease;
-}
-
-.productos_menu_nav li:hover {
-    background-color: #482464;
-    transform: translateY(8px);
-}
-
-.productos_menu_nav a {
-    font-size: 1rem;
-    color: white;
-    font-weight: bold;
-}
-
-.title_productos h2 {
-    border-bottom: #50B58B 1px solid;
-    width: auto;
-    text-align: center;
-    padding: 12px;
-    margin: 0 auto;
-    font-size: 1.4rem;
-}
 
 /* tarjetas de productos */
 .productos_section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    gap: 5px;
     max-width: 1000px;
     margin: 0 auto;
     padding: 50px 5px;
+
+    .card__productos {
+        background-color: rgba(255, 255, 255, 0.90);
+        border: #000000 2px solid;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 1);
+        transition: all 0.3s;         
+    
+        &:hover {
+            background-color: rgba(255, 255, 255, 1);
+            border: #E63E8E 2px solid;
+            scale: 110%;
+            box-shadow: 1px 1px 15px 9px rgba(0, 0, 0, 0.8);
+        }
+    
+            &-marca {
+                font-size: 1.4rem;
+                line-height: 1.3rem;
+                color: #242424;
+                padding: 4px;
+                margin-top: 12px;
+            }
+            
+        &-header p {
+            font-size: 1rem;
+            color: #292929;
+            padding: 4px;
+        }
+    
+        &-foto {
+            width: 100%;
+            padding: 10px;
+        }
+        
+        &-precio {
+            color: #ec1492;
+        }
+    
+        &-unidad {
+            color: #0e0e0e;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+        
+        &-logo-mercadolibre {
+            background-color: #FFE900;
+            padding: 10px 10px;
+            border-radius: 0px 0px 5px 5px;
+            align-self: end;
+            
+            & img {
+                width: 40%;
+                align-self: end; 
+            }
+        }            
+    }
 }
 
-.card__productos {
-    background-color: rgba(255, 255, 255, 0.90);
-    border: #000000 2px solid;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 1);
-    transition: all 0.3s;
-}
-
-.card__productos:hover {
-    border: #E63E8E 2px solid;
-    scale: 110%;
-    box-shadow: 1px 1px 20px 10px rgba(0, 0, 0, 1);
-}
-
-.card__productos-marca {
-    font-size: 1.7rem;
-    line-height: 1.5rem;
-    color: #222222;
-    padding: 4px;
-    margin-top: 12px;
-}
-
-.card__productos-header p {
-    color: #000000;
-    font-weight: 1000;
-    padding: 4px;
-}
-
-.card__productos-foto {
-    width: 100%;
-    padding: 10px;
-}
-
-.card__productos-precio {
-    color: #ec1492;
-}
-
-.card__productos-unidad {
-    color: #0e0e0e;
-    font-size: 0.9rem;
-    margin-bottom: 8px;
-}
-
-.card__productos-logo-mercadolibre {
-    background-color: #FFE900;
-    padding: 10px  10px;
-    border-radius: 0px 0px 5px 5px;
-}
-
-.card__productos-logo-mercadolibre img {
-    width: 40%;
-}
 

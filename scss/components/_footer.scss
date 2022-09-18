@@ -4,61 +4,61 @@
 
 
 footer {
-    background-color: rgb(17, 17, 17);    
-}
-
-.line-gradient {
-    /* por si no soporta gradient el navegador */
-    background-color: #482464;
-    background-image: linear-gradient(to left, #E63E8E, #6D4795, #4A77BA, #3CBDE4, #56B584);
-    height: 5px;
-    animation: gradient_footer 5s linear infinite;
-
-    @keyframes gradient_footer {
-        0% {
-            background-position: 0 0;
-        }
+    background-color: rgb(17, 17, 17);
+            
+    .line-gradient {
+        /* color solido por si el navegador no sporta gradients */
+        background-color: #482464;
+        background-image: linear-gradient(to left, #E63E8E, #6D4795, #4A77BA, #3CBDE4, #56B584);
+        height: 5px;
+        animation: gradient_footer 5s linear infinite;
     
-        50% {
-            background-position: 100vw 0;
-        }
-    }    
-}
-
-.footer_logoWW {
-    display: block;
-    text-align: center;
-    padding: 5rem 2rem;
-
-    img {
-        width: 250px;
+        @keyframes gradient_footer {
+            0% {
+                background-position: 0 0;
+            }
+        
+            50% {
+                background-position: 100vw 0;
+            }
+        }    
     }
-}
 
-.rrss {
-    display: block;
-    text-align: center;
-
-    img {
-        width: 85px;
-        padding-inline: 12px;
-        transition: all 0.2s;
-    }
+    .footer_logoWW {
+        display: block;
+        text-align: center;
+        padding: 5rem 2rem;
     
-    img:hover {
-        filter: brightness(100%) saturate(0);
+        img {
+            width: 250px;
+        }
     }
-}
 
-.DerechosReservados {
-    color:rgb(255, 255, 255);
-    text-align: center;
-    font-size: 0.95rem;
-    padding: 3vh 1vh;
-    margin-bottom: 0.5rem;
-    line-height: 1.5rem;        
-   
-    .maikerobando-color {
-        color: #50B58B;
+    .rrss {
+        display: block;
+        text-align: center;
+    
+        img {
+            width: 85px;
+            padding-inline: 12px;
+            transition: all 0.2s;
+        }
+        
+        img:hover {
+            filter: brightness(100%) saturate(0);
+        }
+    }
+
+    .DerechosReservados {
+        color:rgb(255, 255, 255);
+        text-align: center;
+        font-size: 0.95rem;
+        padding: 3vh 1vh;
+        margin-bottom: 0.5rem;
+        line-height: 1.5rem;        
+       
+        .maikerobando-color {
+            color: #50B58B;
+        }
     }
 }

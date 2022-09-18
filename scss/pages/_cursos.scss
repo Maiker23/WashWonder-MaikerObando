@@ -10,14 +10,11 @@
     margin-top: 40px;
 }
 
-#cursos-color {
-    color: #50B58B;
-}
 
 .section_cursos {
     display: grid;
-    max-width: auto;
-    margin: auto 6%;
+    max-width: 1000px;
+    margin: 0 auto;    
     margin-bottom: 100px;
 }
 
@@ -28,59 +25,62 @@
     margin: 25px 0;
     border: #000000 2px solid;
     transition: all 0.3s;
+    
+    &:hover {
+        background-color: rgb(255, 255, 255);
+        border: #ec1492 2px solid;
+    }
 }
 
-.div-background:hover {
-    background-color: rgb(255, 255, 255);
-    border: #ec1492 2px solid;
-}
-
-.curso__card-contenido {
-    margin-left: 15px;
-}
 
 .curso__card {
     display: flex;
+
+    & img {
+        max-width: 400px;
+    }
+
+    .curso__card-contenido {
+        margin-left: 15px;
+    }
+        
+        & h2 {
+            color: #111111;
+        }
+
+        & h4 {
+            font-family: "Montserrat-Ligth";
+            font-weight: bold;
+            color: #ec1492;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        & p {
+            color: #000000;
+            margin-top: 10px;
+        }
+
+        &-boton {
+            background-color: #50B58B;
+            width: 160px;
+            padding: 11px 0;
+            text-align: center;
+            border-radius: 100px;
+            cursor: pointer;
+            font-weight: 800;
+            font-size: 0.8rem;
+            margin-top: 15px;
+
+            &:hover {
+                background-color: #ec1492;
+                font-size: 0.85rem;
+            }        
+        }
+
+    & h3 {
+        color: #ffffff;
+    }
 }
 
-.curso__card img {
-    max-width: 400px;
-}
 
-.curso__card h2 {
-    color: #000000;
-}
-
-.curso__card h4 {
-    font-family: "Montserrat-Bold";
-    font-weight: bold;
-    color: #444444;
-    font-size: 1rem;
-    margin-top: 10px;
-}
-
-.curso__card p {
-    color: #000000;
-    margin-top: 10px;
-}
-
-.curso__card-boton {
-    background-color: #50B58B;
-    width: 190px;
-    padding: 12px 0;
-    text-align: center;
-    border-radius: 120px;
-    cursor: pointer;
-    font-weight: 800;
-    font-size: 0.8rem;
-    margin-top: 15px;
-}
-
-.curso__card-boton:hover {
-    background-color: #ec1492;
-    font-size: 0.85rem;
-}
-
-.curso__card-boton h3 {
-    color: #ffffff;
-}
