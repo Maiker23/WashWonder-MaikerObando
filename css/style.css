@@ -97,7 +97,7 @@ a {
 /* ----------------- Icon Section ------------------ */
 /* ----------------- Tarjetas de Servicios ------------------ */
 .index__servicios {
-  margin-block: 7rem; }
+  margin-block: 45px; }
   .index__servicios-titulos {
     text-align: center;
     font-size: 1.5rem;
@@ -159,23 +159,24 @@ a {
       .comentarios .comentarios__content .card__comentario-estrellas {
         scale: 70%; }
   .comentarios .boton__comentarios {
-    background-color: #fdfdfd;
+    background-color: #252525;
     width: 200px;
     padding: 13px 0;
     text-align: center;
     border-radius: 120px;
     cursor: pointer;
-    font-weight: 800;
+    font-weight: 1000;
     font-size: 1.0rem;
+    letter-spacing: 0.01rem;
     margin: 45px auto;
-    color: #623883; }
+    border: #ffffff 1px solid;
+    transition: all 0.2s; }
     .comentarios .boton__comentarios:hover {
       background-color: #ec1492;
-      font-size: 1.03rem; }
+      letter-spacing: 0.04rem;
+      border: #ec1492 1px solid; }
     .comentarios .boton__comentarios a {
-      color: #623883; }
-      .comentarios .boton__comentarios a:hover {
-        color: #ffffff; }
+      color: #ffffff; }
 
 /* ----------------- Comentarios / Opinionnes ------------------ */
 .title-servicios {
@@ -184,62 +185,52 @@ a {
   padding: 0px 3px;
   margin-top: 40px; }
 
-#servicios-color {
-  color: #E63E8E; }
-
-.section_servicios {
-  background-color: #f3f3f3;
+.servicios {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
   margin-block: 80px;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 80px 15px; }
-
-.servicios__card {
-  background-color: #161616;
-  border-radius: 5px;
-  max-width: 400px;
-  min-width: auto;
-  border: #000000 2px solid;
-  margin: 25px 10px;
-  transition: all 0.3s;
-  padding: 15px; }
-
-.servicios__card:hover {
-  background-color: black;
-  border: #ec1492 2px solid; }
-
-.servicios__card img {
-  width: 100%; }
-
-.servicios__card h2 {
-  color: #50B58B;
-  margin-top: 10px;
-  font-size: 1.3rem; }
-
-.servicios__card p {
-  color: #ffffff;
-  margin-top: 10px; }
-
-.servicios__card-boton {
-  background-color: #50B58B;
-  width: 100%;
-  padding: 12px 0;
-  text-align: center;
-  border-radius: 2px;
-  cursor: pointer;
-  font-weight: 800;
-  font-size: 0.8rem;
-  margin-top: 15px; }
-
-.servicios__card-boton:hover {
-  background-color: #ec1492;
-  font-size: 0.85rem; }
-
-.servicios__card-boton h3 {
-  color: #ffffff; }
+  justify-content: center; }
+  .servicios__card {
+    background-color: #383838;
+    border-radius: 5px;
+    max-width: 400px;
+    min-width: auto;
+    border: #000000 1px solid;
+    margin: 25px 10px;
+    transition: all 0.3s;
+    padding: 15px; }
+    .servicios__card:hover {
+      background-color: black;
+      border: #ec1492 1px solid; }
+    .servicios__card img {
+      width: 100%; }
+    .servicios__card h2 {
+      color: #50B58B;
+      margin-top: 10px;
+      font-size: 1.3rem; }
+    .servicios__card p {
+      color: #ffffff;
+      margin-top: 10px; }
+    .servicios__card h4 {
+      color: #ffffff;
+      text-transform: uppercase; }
+    .servicios__card-boton {
+      background-color: #50B58B;
+      width: 100%;
+      padding: 12px 0;
+      text-align: center;
+      border-radius: 2px;
+      cursor: pointer;
+      font-weight: 1000;
+      font-size: 0.8rem;
+      letter-spacing: 0.08rem;
+      margin-top: 15px;
+      transition: all 0.2s; }
+      .servicios__card-boton:hover {
+        background-color: #ec1492;
+        letter-spacing: 0.2rem; }
 
 #titulo__wondershop {
   text-align: center;
@@ -511,6 +502,9 @@ a {
 .text_color-ww-fucsia {
   color: #ec1492; }
 
+.text_color-ww-fucsia2 {
+  color: #E63E8E; }
+
 .text_color-ww-verde {
   color: #50B58B; }
 
@@ -560,7 +554,8 @@ a {
         color: #623883;
         font-size: 1.5rem;
         font-weight: 200;
-        margin-left: 20px; }
+        margin-left: 20px;
+        transition: all 0.2s; }
         .header__contenido-nav a:hover {
           color: #ec1492;
           font-weight: bold; }
@@ -584,11 +579,11 @@ footer {
   50% {
     background-position: 100vw 0; } }
   footer .footer_logoWW {
-    display: block;
-    text-align: center;
-    padding: 5rem 2rem; }
+    display: flex;
+    justify-content: center; }
     footer .footer_logoWW img {
-      width: 250px; }
+      width: 220px;
+      margin: 30px 0; }
   footer .rrss {
     display: block;
     text-align: center; }
@@ -608,20 +603,20 @@ footer {
     footer .DerechosReservados .maikerobando-color {
       color: #50B58B; }
 
-.tag_marcas-background {
+.tag__marcas {
   padding: 50px 20px;
   background-color: #000000;
-  background-image: url("/assets/imagenes/backgorund_ww-fondo.jpg");
+  background-image: url("../assets/imagenes/backgorund_ww-fondo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed; }
-  .tag_marcas-background .tag_marcas {
+  .tag__marcas-logos {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
     align-items: center; }
-    .tag_marcas-background .tag_marcas img {
+    .tag__marcas-logos img {
       padding: 50px; }
 
 .whatsapp-qr {
@@ -675,12 +670,14 @@ footer {
     display: none; }
   .header__contenido .nav_icon-menu {
     display: flex; }
-  .tag_marcas {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url("./assets/imagenes/background_gotas-02-02.png"); }
+  /* ----------------- Tag Marcas ------------------ */
+  .tag__marcas {
+    padding: 10% 1%; }
+    .tag__marcas-logos {
+      padding: 0px; }
+      .tag__marcas-logos img {
+        padding: 40px 0;
+        margin: 0 100%; }
   /* ----------------- PAGE / Wonder Shop ------------------ */
   #titulo__wondershop-h1 {
     font-size: 4rem;
@@ -717,30 +714,34 @@ footer {
     right: 5px; } }
 
 @media (max-width: 720px) {
+  /* ----------------- Header ------------------ */
   .productos_menu_nav ul {
     gap: 4px; }
     .productos_menu_nav ul li:hover {
       transform: translateY(0px); }
     .productos_menu_nav ul li a {
       font-size: 0.8rem; }
+  /* ----------------- PAGE / Index ------------------ */
   .productos_section .card__productos:hover {
     scale: 100%;
     box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.7); }
+  /* ----------------- PAGE / Servicios ------------------ */
+  .title-servicios {
+    font-size: 2.0rem; }
+  /* ----------------- PAGE / Cursos ------------------ */
   .title-cursos {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     padding: 2px 3px;
     margin-top: 35px; }
-  .tag_marcas-background {
-    padding: 10% 1%; }
-    .tag_marcas-background .tag_marcas {
+  /* ----------------- Tag Marcas ------------------ */
+  .tag__marcas {
+    padding: 40px 0; }
+    .tag__marcas-logos {
       padding: 0px; }
-      .tag_marcas-background .tag_marcas img {
-        padding: 20px;
-        margin: 0 100px; }
-    .tag_marcas-background img {
-      padding: 1px;
-      margin: 2px 1px;
-      scale: 75%; } }
+      .tag__marcas-logos img {
+        padding: 33px 0;
+        margin: 0 100%;
+        scale: 80%; } }
 
 @media (max-width: 500px) {
   /* ----------------- PAGE / Index ------------------ */
@@ -751,11 +752,30 @@ footer {
   #titulo_main-h2 {
     font-size: 1rem;
     margin-inline: 9px; }
+  .index__servicios-titulos {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase; }
+  .index__servicios .index__banner-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; }
+    .index__servicios .index__banner-servicios .index__banner-CardServicios {
+      margin-bottom: 30px;
+      transition: all 0.5s ease;
+      border: #000000 1px solid; }
+      .index__servicios .index__banner-servicios .index__banner-CardServicios:hover {
+        transform: translateY(35px);
+        border: #E63E8E 1px solid;
+        box-shadow: 0 5px 20px 5px black; }
   .comentarios .comentarios__content .card__comentario {
     padding: 30px;
     border: #747474 1px solid;
     border-radius: 15px; }
-  /* ----------------- PAGE / Index ------------------ */
   /* ----------------- PAGE / Wonder Shop ------------------ */
   #titulo__wondershop {
     padding-block: 0;
@@ -775,14 +795,13 @@ footer {
     z-index: 0; }
     .productos_menu_nav ul {
       display: block; }
-  /* ----------------- PAGE / Wonder Shop ------------------ */
   /* ----------------- PAGE / Contacto ------------------ */
   .formulario-datos form {
     max-width: 90%; }
   /* ----------------- Tags Marcas ------------------ */
-  .tag_marcas-background {
-    padding: 10% 1%; }
-    .tag_marcas-background .tag_marcas img {
-      padding: 0px;
-      margin: 20px 5px;
+  .tag__marcas {
+    padding: 35px 0; }
+    .tag__marcas img {
+      padding: 20px 0;
+      margin: 0 100%;
       scale: 65%; } }

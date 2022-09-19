@@ -30,11 +30,12 @@
                 color: #623883;
                 font-size: 1.5rem;
                 font-weight: 200;
-                margin-left: 20px;
+                margin-left: 20px;                
+                transition: all 0.2s;
                 
                 &:hover {
                     color: #ec1492;
-                    font-weight: bold;    
+                    font-weight: bold;                      
                 }
             }
             

@@ -40,15 +40,19 @@
         }
     }
 
+/* ----------------- Tag Marcas ------------------ */
+    .tag__marcas {
+        padding: 10% 1%;
 
-    .tag_marcas {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        background-image: url("./assets/imagenes/background_gotas-02-02.png");
+        &-logos {
+            padding: 0px;
+
+            & img {
+                padding: 40px 0;
+                margin: 0 100%;
+            }
+        }
     }
-
     
 /* ----------------- PAGE / Wonder Shop ------------------ */
     #titulo__wondershop-h1 {
@@ -108,6 +112,7 @@
 
 
 @media (max-width: 720px) {
+/* ----------------- Header ------------------ */    
     .productos_menu_nav {
         & ul {
             gap: 4px;
@@ -124,6 +129,7 @@
         }
     }
 
+/* ----------------- PAGE / Index ------------------ */
     .productos_section {
         .card__productos {
             &:hover {
@@ -133,28 +139,30 @@
         }
     }
 
+/* ----------------- PAGE / Servicios ------------------ */
+    .title-servicios {
+        font-size: 2.0rem;
+    }
+
+/* ----------------- PAGE / Cursos ------------------ */
     .title-cursos {
-        font-size: 2.5rem;
+        font-size: 2.0rem;
         padding: 2px 3px;
         margin-top: 35px;
     }
 
-    .tag_marcas-background {
-        padding: 10% 1%;
+/* ----------------- Tag Marcas ------------------ */
+    .tag__marcas {
+        padding: 40px 0;
 
-        .tag_marcas {
+        &-logos {
             padding: 0px;
 
             & img {
-                padding: 20px;
-                margin: 0 100px;
+                padding: 33px 0;
+                margin: 0 100%;
+                scale: 80%;
             }
-        }
-
-        & img {
-            padding: 1px;
-            margin: 2px 1px;
-            scale: 75%;
         }
     }
 }
@@ -162,7 +170,7 @@
 
 
 @media (max-width: 500px) {
-/* ----------------- PAGE / Index ------------------ */  
+/* ----------------- PAGE / Index ------------------ */     
     .icon__section {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -177,6 +185,36 @@
         }
     }
 
+    .index__servicios {
+            &-titulos {
+                text-align: center;
+                font-size: 1.5rem;
+                margin-bottom: 3rem;
+                text-transform: uppercase;        
+            }
+
+        .index__banner-servicios {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            align-items: center;
+            justify-content: center;        
+            margin: 0 auto;
+        
+            .index__banner-CardServicios {
+                margin-bottom: 30px;
+                transition: all 0.5s ease;
+                border: #000000 1px solid;
+        
+                &:hover {
+                    transform: translateY(35px);
+                    border: #E63E8E 1px solid;
+                    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 1);
+                }
+            }    
+        }
+    }
+
     .comentarios {
         .comentarios__content {
             .card__comentario {
@@ -185,10 +223,7 @@
                 border-radius: 15px;
             }
         }
-    }
-    
-    
-/* ----------------- PAGE / Index ------------------ */   
+    }    
   
 /* ----------------- PAGE / Wonder Shop ------------------ */  
     #titulo__wondershop {
@@ -221,21 +256,20 @@
             display: block;
         }
     }
-/* ----------------- PAGE / Wonder Shop ------------------ */  
-
+ 
 /* ----------------- PAGE / Contacto ------------------ */      
     .formulario-datos form {
         max-width: 90%;
     }
 
 /* ----------------- Tags Marcas ------------------ */  
-    .tag_marcas-background {
-        padding: 10% 1%;
+    .tag__marcas {
+        padding: 35px 0;
 
-        .tag_marcas img {
-            padding: 0px;
-            margin: 20px 5px;
+        & img {
+            padding: 20px 0;
+            margin: 0 100%;
             scale: 65%;
         }
-    }
+    }    
 }

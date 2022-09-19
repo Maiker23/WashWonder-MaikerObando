@@ -25,12 +25,12 @@ footer {
     }
 
     .footer_logoWW {
-        display: block;
-        text-align: center;
-        padding: 5rem 2rem;
+        display: flex;        
+        justify-content: center;      
     
         img {
-            width: 250px;
+            width: 220px;
+            margin: 30px 0;
         }
     }
 
