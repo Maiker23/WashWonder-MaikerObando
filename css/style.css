@@ -47,6 +47,19 @@ ul {
 a {
   text-decoration: none; }
 
+output {
+  display: inline-block; }
+
+address {
+  font-style: normal;
+  line-height: inherit; }
+
+select {
+  word-wrap: normal; }
+
+select:disabled {
+  opacity: 1; }
+
 /* banner principal */
 .main__banner img {
   width: 100%; }
@@ -541,34 +554,58 @@ a {
   position: sticky;
   top: 0;
   z-index: 2;
-  padding: 6px 15px;
+  padding: 10px 15px;
   box-shadow: 0px 5px 30px 5px black; }
   .header__contenido {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    flex-wrap: wrap; }
     .header__contenido-logo img {
-      width: 100px; }
-    .header__contenido-nav {
+      width: 100px;
+      vertical-align: middle; }
+    .header__contenido-ul {
       display: flex; }
-      .header__contenido-nav a {
+      .header__contenido-ul a {
         color: #623883;
         font-size: 1.4rem;
         font-weight: 200;
-        margin-left: 30px;
+        margin-inline: 15px;
+        vertical-align: middle;
+        letter-spacing: 0.0rem;
+        text-shadow: #ffffff 0px 0px 5px;
         transition: all 0.2s; }
-        .header__contenido-nav a:hover {
+        .header__contenido-ul a:hover {
           color: #ec1492;
-          font-weight: bold; }
-      .header__contenido-nav .icon-home {
-        width: 38px;
-        margin-left: 20px; }
-      .header__contenido-nav .nav_icon-menu {
-        width: 38px;
-        margin-left: 20px;
-        display: none; }
+          text-shadow: #ec149259 0px 0px 5px;
+          font-weight: bold;
+          letter-spacing: 0.3rem; }
+    .header__contenido-button {
+      margin-left: 20px; }
+    .header__contenido-menu a {
+      font-size: 0.9rem;
+      margin-block: 10px;
+      text-align: right;
+      font-family: "Montserrat-Bold";
+      letter-spacing: 0.0rem;
+      transition: all 0.3s; }
+      .header__contenido-menu a:hover {
+        color: #ec1492;
+        letter-spacing: 0.3rem; }
+      .header__contenido-menu a .nav-item-rrss {
+        margin-top: 10px;
+        filter: brightness(100%) saturate(0);
+        transition: all 0.2s; }
+        .header__contenido-menu a .nav-item-rrss:hover {
+          filter: none;
+          scale: 110%; }
+    .header__contenido-menu li {
+      margin-right: 20px; }
+    .header__contenido-menu-hr {
+      border: #ec1492 1px solid;
+      opacity: 20%; }
 
 footer {
   background-color: #111111; }
@@ -672,10 +709,8 @@ footer {
 @media (max-width: 835px) {
   .header__contenido-logo img {
     width: 95px; }
-  .header__contenido-nav li {
+  .header__contenido-ul {
     display: none; }
-  .header__contenido .nav_icon-menu {
-    display: flex; }
   /* ----------------- Tag Marcas ------------------ */
   .tag__marcas {
     padding: 10% 1%; }
@@ -720,7 +755,7 @@ footer {
     right: 5px; } }
 
 @media (max-width: 720px) {
-  /* ----------------- Header ------------------ */
+  /* ----------------- PAGE / WonderShop ------------------ */
   .productos_menu_nav ul {
     gap: 4px; }
     .productos_menu_nav ul li:hover {

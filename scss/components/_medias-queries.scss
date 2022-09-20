@@ -30,12 +30,8 @@
                 width: 95px;
             }
 
-            &-nav li {
+            &-ul {
                 display: none;
-            }
-
-            .nav_icon-menu {
-                display: flex;
             }
         }
     }
@@ -112,7 +108,7 @@
 
 
 @media (max-width: 720px) {
-/* ----------------- Header ------------------ */    
+/* ----------------- PAGE / WonderShop ------------------ */    
     .productos_menu_nav {
         & ul {
             gap: 4px;

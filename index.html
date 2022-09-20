@@ -2,7 +2,7 @@
 <html lang="es">
 
 <!-- ----------------------------------------
-Proyect by Maiker Obando - Wash Wonder 
+Proyect by Maiker Obando - Wash Wonder
 ----------------------------------------- -->
 
 <head>
@@ -11,35 +11,70 @@ Proyect by Maiker Obando - Wash Wonder
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wash Wonder - Detailing</title>
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
     <header class="header">
-        <div class="header__contenido">
-            <section class="header__contenido-logo">
-                <a href="index.html"><img src="./assets/logo_ww_negro.png" alt="logo wash wonder"></a>
-            </section>
-            <nav>
-                <ul class="header__contenido-nav">
-                    <li><a href="./pages/servicios.html">SERVICIOS</a></li>
-                    <li><a href="./pages/wonder-shop.html">WONDER SHOP</a></li>
-                    <li><a href="./pages/cursos.html">CURSOS</a></li>
-                    <li><a href="./pages/contactos.html">CONTACTOS</a></li>
-                    <!-- <img class="icon-home" src="./assets/icons/home.svg" alt="Home Wash Wonder" /> -->
-                    <img class="nav_icon-menu" src="./assets/icons/icon_menu.svg" alt="Menu Wash Wonder" />
+        <nav class="header__contenido">
+            <!-- logo -->
+            <a href="index.html" class="header__contenido-logo">            
+                <img src="./assets/logo_ww_negro.png" alt="logo wash wonder">
+            </a>
+            <!-- pages --> 
+            <ul class="header__contenido-ul">
+                <li><a href="./pages/servicios.html">SERVICIOS</a></li>
+                <li><a href="./pages/wonder-shop.html">WONDER SHOP</a></li>
+                <li><a href="./pages/cursos.html">CURSOS</a></li>
+                <li><a href="./pages/contactos.html">CONTACTOS</a></li>                               
+            </ul>
+            <!-- incon menu -->  
+            <button class="header__contenido-button navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="nav_icon-menu"><img src="./assets/icons/icon_menu.svg" width="38px" alt="Menu Wash Wonder"></span>
+            </button>
+            <div class="header__contenido-menu collapse navbar-collapse" id="navbarTogglerDemo01">
+                <hr class="header__contenido-menu-hr mt-4">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text_color-ww-azul" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <hr class="header__contenido-menu-hr">
+                    <li class="nav-item">
+                        <a class="nav-link text_color-ww-morado" href="./pages/servicios.html">SERVICIOS</a>
+                    </li>
+                    <hr class="header__contenido-menu-hr">
+                    <li class="nav-item">
+                        <a class="nav-link text_color-ww-morado" href="./pages/wonder-shop.html">WONDER SHOP</a>
+                    </li>
+                    <hr class="header__contenido-menu-hr">
+                    <li class="nav-item">
+                        <a class="nav-link text_color-ww-morado" href="./pages/cursos.html">CURSOS</a>
+                    </li>
+                    <hr class="header__contenido-menu-hr">
+                    <li class="nav-item">
+                        <a class="nav-link text_color-ww-morado" href="./pages/contactos.html">CONTACTOS</a>
+                    </li>
+                    <hr class="header__contenido-menu-hr">
+                    <div class="nav-item text-center">
+                        <a href="https://www.facebook.com/Maiker23.DG"><img src="./assets/rrss/facebock.svg" width="35px" class="nav-item-rrss" alt="facebock"></a>
+                        <a href="https://www.instagram.com/maiker23/"><img src="./assets/rrss/instragram.svg" width="35px" class="nav-item-rrss mx-3" alt="instagram"></a>
+                        <a href="https://www.youtube.com/channel/UCq7tXJ-0qex8quALy4O0BEQ?view_as=subscriber"><img src="./assets/rrss/youtube.svg" width="35px" class="nav-item-rrss" alt="youtube"></a>
+                    </div>
                 </ul>
-            </nav>            
-        </div>
+            </div>            
+        </nav>
     </header>
 
-    
+
     <main>
         <section class="main__banner">
             <img src="./assets/imagenes/banenr_home_01.jpg" alt="Wash Wonder Detailing" />
         </section>
 
-            
+
         <!-- ---------------- Icon Section --------------- -->
         <section class="icon__section">
             <div class="background-servicios">
@@ -49,14 +84,14 @@ Proyect by Maiker Obando - Wash Wonder
             <div class="background-shop">
                 <a href="./pages/wonder-shop.html"><img src="./assets/icons/icon_servicios/icon_servicios_02.svg" alt="Shop WW"></a>
             </div>
-                
+
             <div class="background-cursos" >
                 <a href="./pages/cursos.html"><img src="./assets/icons/icon_servicios/icon_servicios_03.svg" alt="Cursos WW"></a>
             </div>
-                
+
             <div class="background-contacto" >
                 <a href="./pages/contactos.html"><img src="./assets/icons/icon_servicios/icon_servicios_04.svg" alt="Contacto WW"></a>
-            </div>            
+            </div>
         </section>
         <!-- ---------------- Icon Section --------------- -->
 
@@ -92,8 +127,8 @@ Proyect by Maiker Obando - Wash Wonder
 
                 <article class="index__banner-CardServicios">
                     <a href="./pages/servicios.html"> <img src="./assets/imagenes/servicios/banner_main_servicios_2.png" alt="Servicios WW"></a>
-                </article>                
-            </div>      
+                </article>
+            </div>
         </section>
         <!-- ---------------- Tarjetas de Servicios --------------- -->
 
@@ -101,7 +136,7 @@ Proyect by Maiker Obando - Wash Wonder
         <!-- ---------------- Comentarios / Opinionnes --------------- -->
         <section class="comentarios">
             <h2 class="comentarios__title">COMENTARIOS DE QUIENES NOS PREFIRIERON</h2>
-            
+
             <div class="comentarios__content">
                 <article class="card__comentario">
                     <div>
@@ -111,38 +146,38 @@ Proyect by Maiker Obando - Wash Wonder
                     <P>Excelente servicio! impecable trabajo de sellado cerámico a mi Ford Mustang del 65.</P>
                     <img class="card__comentario-estrellas" src="./assets/icons/5_estrellas.svg" alt="Opiniones Wash Wonder" />
                 </article>
-            
+
                 <article class="card__comentario">
                     <div>
-                        <img src="./assets/imagenes/valoraciones/valoracion_recurso01.png" alt="Paul Teutul">                        
+                        <img src="./assets/imagenes/valoraciones/valoracion_recurso01.png" alt="Paul Teutul">
                     </div>
                     <h3 class="card__comentario-usuario">PAUL TEUTUL</h3>
                     <P>No crei que hicieran tan buen trabajo, me sorprendieron con tan buen trabajo que realizaron en mis motocicletas.</P>
                     <img class="card__comentario-estrellas" src="./assets/icons/4_estrellas.svg" alt="Opiniones Wash Wonder" />
                 </article>
-            
+
                 <article class="card__comentario">
                     <div>
-                       <img src="./assets/imagenes/valoraciones/valoracion_recurso02.png" alt="Chip Foose">                       
+                       <img src="./assets/imagenes/valoraciones/valoracion_recurso02.png" alt="Chip Foose">
                     </div>
                     <h3 class="card__comentario-usuario">CHIP FOOSE</h3>
                     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minima explicabo corporis nobis pariatur dolor beatae fugiat rem,</P>
                     <img class="card__comentario-estrellas" src="./assets/icons/5_estrellas.svg" alt="Opiniones Wash Wonder" />
                 </article>
-           
+
                 <article class="card__comentario">
                     <div>
-                        <img src="./assets/imagenes/valoraciones/valoracion_recurso03.png" alt="Supercar Blondie">                        
+                        <img src="./assets/imagenes/valoraciones/valoracion_recurso03.png" alt="Supercar Blondie">
                     </div>
                     <h3 class="card__comentario-usuario">SUPERCAR BLONDIE</h3>
                     <P>Encontre a estos emprendedores con una calidad en detailing automotriz increible para autos de alta gama y coleccionistas.</P>
                     <img class="card__comentario-estrellas" src="./assets/icons/5_estrellas.svg" alt="Opiniones Wash Wonder" />
-                </article>           
+                </article>
             </div>
 
             <div class="boton__comentarios">
                 <a class="boton__comentarios-texto" href="">Más comentarios</a>
-            </div>                            
+            </div>
         </section>
         <!-- ---------------- Comentarios / Opinionnes --------------- -->
 
@@ -171,14 +206,14 @@ Proyect by Maiker Obando - Wash Wonder
         </section>
 
         <section class="rrss">
-            <a href="https://www.facebook.com/"><img src="./assets/rrss/facebock.svg" alt="facebock"></a>
-            <a href="https://www.instagram.com/"><img src="./assets/rrss/instragram.svg" alt="instagram"></a>
-            <a href="https://www.youtube.com/"><img src="./assets/rrss/youtube.svg" alt="yotube"></a>
+            <a href="https://www.facebook.com/Maiker23.DG"><img src="./assets/rrss/facebock.svg" alt="facebock"></a>
+            <a href="https://www.instagram.com/maiker23/"><img src="./assets/rrss/instragram.svg" alt="instagram"></a>
+            <a href="https://www.youtube.com/channel/UCq7tXJ-0qex8quALy4O0BEQ?view_as=subscriber"><img src="./assets/rrss/youtube.svg" alt="yotube"></a>
         </section>
-       
+
         <p class="DerechosReservados">
             @2022 WASH WONDER. Todos los derechos Reservados. Power by <a class="maikerobando-color" href="https://www.instagram.com/maiker23/"><span class="font-weight">Maiker Obando</span></a>
-        </p>               
+        </p>
     </footer>
 
     <!-- ---------------- WhatsApp --------------- -->
@@ -188,13 +223,13 @@ Proyect by Maiker Obando - Wash Wonder
                 <img src="./assets/icons/whatsapp_qr.svg" alt="whastapp" width="150px" />
             </a>
         </div>
-    
+
         <div class="whatsapp-icon">
             <a href="https://api.whatsapp.com/send/?phone=%2B56949157263&text&type=phone_number&app_absent=0">
                 <img src="./assets/icons/whatsapp_icon.svg" alt="whastapp" width="70px" />
             </a>
         </div>
-    </section>    
+    </section>
 </body>
 
 </html>

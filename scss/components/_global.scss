@@ -62,3 +62,20 @@ a {
     text-decoration: none;    
 }
 
+output {
+    display: inline-block;
+}
+
+address {    
+    font-style: normal;
+    line-height: inherit;
+}
+
+select {
+    word-wrap: normal;
+}
+
+select:disabled {
+    opacity: 1;
+}
+
