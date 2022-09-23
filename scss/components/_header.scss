@@ -1,88 +1,88 @@
-    // ----------------------------------------
-    // Proyect by Maiker Obando - Wash Wonder 
-    // -----------------------------------------
+// ----------------------------------------
+// Proyect by Maiker Obando - Wash Wonder 
+// -----------------------------------------
 
 
-    .header {
-        border-bottom: #ec1492 3px solid;
-        background-color: rgba(255, 255, 255, 0.94);
-        position: sticky;
-        top: 0;
-        z-index: 2;
-        padding: 10px 15px;
-        box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 100);
+.header {
+    border-bottom: #ec1492 3px solid;
+    background-color: rgba(255, 255, 255, 0.94);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 10px 15px;
+    box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 100);
 
-        &__contenido {
+    &__contenido {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        
+        &-logo img {
+            width: 100px;
+            vertical-align: middle;
+        }
+
+        &-ul {
             display: flex;
-            justify-content: space-between;
-            align-items: center;        
-            max-width: 1200px;
-            margin: 0 auto;
-            flex-wrap: wrap;
             
-            &-logo img {
-                width: 100px;
+            a {
+                color: #623883;
+                font-size: 1.4rem;
+                font-weight: 200;
+                margin-inline: 15px; 
                 vertical-align: middle;
-            }
-
-            &-ul {
-                display: flex;
+                letter-spacing: 0.0rem; 
+                text-shadow: #ffffff 0px 0px 5px;
+                transition: all 0.2s ease;
                 
-                a {
-                    color: #623883;
-                    font-size: 1.4rem;
-                    font-weight: 200;
-                    margin-inline: 15px; 
-                    vertical-align: middle;
-                    letter-spacing: 0.0rem; 
-                    text-shadow: #ffffff 0px 0px 5px;
-                    transition: all 0.2s;
-                    
-                    &:hover {
-                        color: #ec1492;
-                        text-shadow: #ec149259 0px 0px 5px;
-                        font-weight: bold;
-                        letter-spacing: 0.3rem;                      
-                    }
+                &:hover {
+                    color: #ec1492;
+                    text-shadow: #ec149259 0px 0px 5px;
+                    font-weight: bold;
+                    letter-spacing: 0.3rem;                      
                 }
             }
+        }
 
-            &-button {
-                margin-left: 20px;
+        &-button {
+            margin-left: 20px;
+        }
+        
+        &-menu a {
+            font-size: 0.9rem;                       
+            margin-block: 12px;
+            text-align: right;               
+            font-family: "Montserrat-Bold";
+            letter-spacing: 0.0rem;
+            transition: all 0.3s;
+
+            &:hover {
+                color: $fucsia;
+                letter-spacing: 0.3rem;                    
             }
-            
-            &-menu a {
-                font-size: 0.9rem;                       
-                margin-block: 10px;
-                text-align: right;               
-                font-family: "Montserrat-Bold";
-                letter-spacing: 0.0rem;
-                transition: all 0.3s;
+
+            .nav-item-rrss {
+                margin-top: 15px;
+                filter: brightness(100%) saturate(0%) opacity(70%) ;
+                transition: all 0.2s ease;
 
                 &:hover {
-                    color: $fucsia;
-                    letter-spacing: 0.3rem;                    
-                }
-
-                .nav-item-rrss {
-                    margin-top: 10px;
-                    filter: brightness(100%) saturate(0);
-                    transition: all 0.2s;
-
-                    &:hover {
-                        filter: none;
-                        scale: 110%;
-                    }                    
-                }
+                    filter: none;
+                    scale: 110%;
+                }                    
             }
-
-            &-menu li {
-                margin-right: 20px; 
-            } 
-
-            &-menu-hr {
-                border: $fucsia 1px solid;
-                opacity: 20%;               
-            }       
         }
+
+        &-menu li {
+            margin-right: 20px; 
+        } 
+
+        &-menu-hr {
+            border: $fucsia 1px solid;
+            opacity: 20%;               
+        }       
     }
+}

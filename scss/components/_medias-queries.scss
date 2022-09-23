@@ -1,20 +1,34 @@
 
 @media (max-width: 1000px) {
-
+    /* ----------------- PAGE - Index ------------------ */
+    .index__servicios {       
+        &-titulos {            
+            font-size: 1.4rem;                   
+        }
+    
+        &-banner {  
+            &-card { 
+                &:hover {
+                    transform: translateY(15px);
+                    box-shadow: 0 4px 15px 4px rgba(0, 0, 0, 0.7);                 
+                }            
+            }    
+        }
+    }
+    
     .comentarios {
         .comentarios__content {
             grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
             gap: 12px;
-
         }
     }
-
+    /* ----------------- PAGE / Wonder Shop ------------------ */
     .productos_section {
         grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
         gap: 0.5vw;
         padding: 50px 20px;
     }
-
+    /* ----------------- PAGE / Cursos ------------------ */
     .section_cursos {
         margin: auto 1%;
         margin-bottom: 90px;
@@ -82,7 +96,7 @@
 
         &-boton {
             margin: 0 auto;
-            margin-top: 25px ;
+            margin-top: 25px;
         }
 
         .curso__card-contenido {
@@ -108,6 +122,24 @@
 
 
 @media (max-width: 720px) {
+/* ----------------- PAGE - Index ------------------ */
+    .index__servicios {       
+        &-titulos {            
+            font-size: 1.2rem;                   
+        }
+
+        &-banner { 
+            flex-wrap: wrap; 
+
+            &-card { 
+                &:hover {
+                    transform: translateY(0px);
+                    box-shadow: 0 4px 15px 4px rgba(0, 0, 0, 0.7);                 
+                }            
+            }    
+        }
+    }
+
 /* ----------------- PAGE / WonderShop ------------------ */    
     .productos_menu_nav {
         & ul {
@@ -125,7 +157,6 @@
         }
     }
 
-/* ----------------- PAGE / Index ------------------ */
     .productos_section {
         .card__productos {
             &:hover {
@@ -180,47 +211,29 @@
             margin-inline: 9px; 
         }
     }
-
-    .index__servicios {
-            &-titulos {
-                text-align: center;
-                font-size: 1.5rem;
-                margin-bottom: 3rem;
-                text-transform: uppercase;        
-            }
-
-        .index__banner-servicios {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            align-items: center;
-            justify-content: center;        
-            margin: 0 auto;
-        
-            .index__banner-CardServicios {
-                margin-bottom: 30px;
-                transition: all 0.5s ease;
-                border: #000000 1px solid;
-        
-                &:hover {
-                    transform: translateY(35px);
-                    border: #E63E8E 1px solid;
-                    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 1);
-                }
-            }    
-        }
-    }
-
+   
     .comentarios {
-        .comentarios__content {
+        &__title {
+            text-align: center;
+            font-size: 1.5rem;
+        }     
+
+        &__content {
             .card__comentario {
                 padding: 30px;
                 border: #747474 1px solid;
                 border-radius: 15px;
+                margin: 5px 5%;
             }
         }
-    }    
-  
+    }
+     
+    .index__servicios {       
+        &-banner{
+            padding: 0px 10%;
+        }
+    
+    }
 /* ----------------- PAGE / Wonder Shop ------------------ */  
     #titulo__wondershop {
         padding-block: 0;
@@ -267,5 +280,12 @@
             margin: 0 100%;
             scale: 65%;
         }
-    }    
+    }
+
+/* ----------------- Footer ------------------ */     
+    footer {
+        .DerechosReservados {        
+            font-size: 0.9rem;
+        } 
+    }
 }

@@ -10,7 +10,6 @@
 
 
 /* Titulo - main index */
-
 #titulo_main {
     text-align: center;
     padding-block: 5rem;
@@ -28,8 +27,7 @@
 
 /* ----------------- Icon Section ------------------ */
 .icon__section {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    @include template_grid(4);
     justify-content: space-around;
     align-content: space-around;
     align-items: center;
@@ -68,7 +66,6 @@
         text-align: center;
         cursor: pointer;
     }
-
 }
 /* ----------------- Icon Section ------------------ */
 
@@ -76,33 +73,35 @@
 /* ----------------- Tarjetas de Servicios ------------------ */
 .index__servicios {
     margin-block: 45px;
-
+   
     &-titulos {
         text-align: center;
         font-size: 1.5rem;
-        margin-bottom: 3rem;
+        margin-bottom: 50px;
         text-transform: uppercase;        
     }
 
-    .index__banner-servicios {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 6px;
-        align-items: center;
-        justify-content: center;        
+    &-banner {
+        @include template_flex(center);                
+        gap: 6px;               
         margin: 0 auto;
+        padding: 0px 2%;
     
-        .index__banner-CardServicios {
-            margin-bottom: 30px;
-            transition: all 0.5s ease;
+        &-card {   
+            margin-bottom: 30px;            
             border: #000000 1px solid;
-    
+            transition: all 0.5s ease;
+                         
             &:hover {
                 transform: translateY(35px);
                 border: #E63E8E 1px solid;
                 box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 1);
             }
-        }    
+        
+            img{
+                width: 100%;                
+            }
+        }   
     }
 }
 /* ----------------- Tarjetas de Servicios ------------------ */
@@ -114,7 +113,7 @@
     padding: 50px 10px;
     background: #0f0f0f;
 
-    .comentarios__title {
+    &__title {
         text-align: center;
         font-size: 2rem;
         margin: 50px auto;
@@ -122,20 +121,19 @@
     }
             
     /* tarjetas de comentarios */
-    .comentarios__content {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+    &__content {
+        @extend .container_1100;
+        @include template_grid(4);
         gap: 15px;
-        max-width: 1100px;
-        margin: 0 auto;
-
+        
         .card__comentario {
             background-color: rgba(0, 0, 0, 0.5);
             padding: 20px;
+            margin: 0;
             border: #444444 1px solid;
             border-radius: 20px;
             text-align: center;
-            transition: border 0.2s ease;
+            transition: all 0.2s ease;
         
             &:hover {
                 border: #623883 1px solid;
@@ -175,11 +173,10 @@
         border: #ffffff 1px solid;       
         transition: all 0.2s;
 
-
         &:hover {
-            background-color: #ec1492;
+            background-color: $fucsia;
             letter-spacing: 0.04rem;
-            border: #ec1492 1px solid;  
+            border: $fucsia 1px solid;  
         }
 
         & a {

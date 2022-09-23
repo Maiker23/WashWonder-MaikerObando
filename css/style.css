@@ -23,7 +23,7 @@ html {
 body {
   font-family: "Montserrat-Ligth";
   color: white;
-  background-color: #141414; }
+  background-color: #161616; }
 
 p {
   color: white; }
@@ -59,6 +59,14 @@ select {
 
 select:disabled {
   opacity: 1; }
+
+.container_1100, .comentarios__content {
+  max-width: 1100px;
+  margin: 0 auto; }
+
+.container_1200 {
+  max-width: 1200px;
+  margin: 0 auto; }
 
 /* banner principal */
 .main__banner img {
@@ -114,23 +122,25 @@ select:disabled {
   .index__servicios-titulos {
     text-align: center;
     font-size: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 50px;
     text-transform: uppercase; }
-  .index__servicios .index__banner-servicios {
+  .index__servicios-banner {
     display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
     align-items: center;
     justify-content: center;
-    margin: 0 auto; }
-    .index__servicios .index__banner-servicios .index__banner-CardServicios {
+    gap: 6px;
+    margin: 0 auto;
+    padding: 0px 2%; }
+    .index__servicios-banner-card {
       margin-bottom: 30px;
-      transition: all 0.5s ease;
-      border: #000000 1px solid; }
-      .index__servicios .index__banner-servicios .index__banner-CardServicios:hover {
+      border: #000000 1px solid;
+      transition: all 0.5s ease; }
+      .index__servicios-banner-card:hover {
         transform: translateY(35px);
         border: #E63E8E 1px solid;
         box-shadow: 0 5px 20px 5px black; }
+      .index__servicios-banner-card img {
+        width: 100%; }
 
 /* ----------------- Tarjetas de Servicios ------------------ */
 /* ----------------- Comentarios / Opinionnes ------------------ */
@@ -140,36 +150,35 @@ select:disabled {
   background: #0f0f0f;
   /* tarjetas de comentarios */
   /* boton  */ }
-  .comentarios .comentarios__title {
+  .comentarios__title {
     text-align: center;
     font-size: 2rem;
     margin: 50px auto;
     color: #db2b85ff; }
-  .comentarios .comentarios__content {
+  .comentarios__content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    max-width: 1100px;
-    margin: 0 auto; }
-    .comentarios .comentarios__content .card__comentario {
+    gap: 15px; }
+    .comentarios__content .card__comentario {
       background-color: rgba(0, 0, 0, 0.5);
       padding: 20px;
+      margin: 0;
       border: #444444 1px solid;
       border-radius: 20px;
       text-align: center;
-      transition: border 0.2s ease; }
-      .comentarios .comentarios__content .card__comentario:hover {
+      transition: all 0.2s ease; }
+      .comentarios__content .card__comentario:hover {
         border: #623883 1px solid;
         box-shadow: 0 10px 20px -5px black;
         background-color: black; }
-      .comentarios .comentarios__content .card__comentario img {
+      .comentarios__content .card__comentario img {
         width: 180px;
         margin: 15px auto; }
-      .comentarios .comentarios__content .card__comentario-usuario {
+      .comentarios__content .card__comentario-usuario {
         font-size: 1.4rem;
         margin-bottom: 20px;
         color: #50B58B; }
-      .comentarios .comentarios__content .card__comentario-estrellas {
+      .comentarios__content .card__comentario-estrellas {
         scale: 70%; }
   .comentarios .boton__comentarios {
     background-color: #252525;
@@ -200,11 +209,11 @@ select:disabled {
 
 .servicios {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
-  margin-block: 80px;
-  align-items: center;
-  justify-content: center; }
+  margin-block: 80px; }
   .servicios__card {
     background-color: #383838;
     border-radius: 5px;
@@ -543,10 +552,16 @@ select:disabled {
   border-color: #4D75B8; }
 
 .bg_gradient-ww-fucsia {
-  background-image: linear-gradient(to left, #E63E8E, #9e35ac); }
+  background-image: linear-gradient(to left, #E63E8E, #9e35ac);
+  height: 5px; }
 
 .bg_gradient-ww-fucsia-top {
-  background-image: linear-gradient(to top, #E63E8E, #9625a5); }
+  background-image: linear-gradient(to top, #E63E8E, #9625a5);
+  height: 5px; }
+
+.bg_gradient-ww-colores {
+  background-image: linear-gradient(to left, #E63E8E, #6D4795, #4A77BA, #3CBDE4, #56B584);
+  height: 5px; }
 
 .header {
   border-bottom: #ec1492 3px solid;
@@ -576,7 +591,7 @@ select:disabled {
         vertical-align: middle;
         letter-spacing: 0.0rem;
         text-shadow: #ffffff 0px 0px 5px;
-        transition: all 0.2s; }
+        transition: all 0.2s ease; }
         .header__contenido-ul a:hover {
           color: #ec1492;
           text-shadow: #ec149259 0px 0px 5px;
@@ -586,7 +601,7 @@ select:disabled {
       margin-left: 20px; }
     .header__contenido-menu a {
       font-size: 0.9rem;
-      margin-block: 10px;
+      margin-block: 12px;
       text-align: right;
       font-family: "Montserrat-Bold";
       letter-spacing: 0.0rem;
@@ -595,9 +610,9 @@ select:disabled {
         color: #ec1492;
         letter-spacing: 0.3rem; }
       .header__contenido-menu a .nav-item-rrss {
-        margin-top: 10px;
-        filter: brightness(100%) saturate(0);
-        transition: all 0.2s; }
+        margin-top: 15px;
+        filter: brightness(100%) saturate(0%) opacity(70%);
+        transition: all 0.2s ease; }
         .header__contenido-menu a .nav-item-rrss:hover {
           filter: none;
           scale: 110%; }
@@ -640,7 +655,7 @@ footer {
     color: white;
     text-align: center;
     font-size: 0.95rem;
-    padding: 3vh 1vh;
+    padding: 25px 8px;
     margin-bottom: 0.5rem;
     line-height: 1.5rem; }
     footer .DerechosReservados .maikerobando-color {
@@ -695,13 +710,21 @@ footer {
     scale: 100%; } }
 
 @media (max-width: 1000px) {
+  /* ----------------- PAGE - Index ------------------ */
+  .index__servicios-titulos {
+    font-size: 1.4rem; }
+  .index__servicios-banner-card:hover {
+    transform: translateY(15px);
+    box-shadow: 0 4px 15px 4px rgba(0, 0, 0, 0.7); }
   .comentarios .comentarios__content {
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
     gap: 12px; }
+  /* ----------------- PAGE / Wonder Shop ------------------ */
   .productos_section {
     grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
     gap: 0.5vw;
     padding: 50px 20px; }
+  /* ----------------- PAGE / Cursos ------------------ */
   .section_cursos {
     margin: auto 1%;
     margin-bottom: 90px; } }
@@ -755,6 +778,14 @@ footer {
     right: 5px; } }
 
 @media (max-width: 720px) {
+  /* ----------------- PAGE - Index ------------------ */
+  .index__servicios-titulos {
+    font-size: 1.2rem; }
+  .index__servicios-banner {
+    flex-wrap: wrap; }
+    .index__servicios-banner-card:hover {
+      transform: translateY(0px);
+      box-shadow: 0 4px 15px 4px rgba(0, 0, 0, 0.7); }
   /* ----------------- PAGE / WonderShop ------------------ */
   .productos_menu_nav ul {
     gap: 4px; }
@@ -762,7 +793,6 @@ footer {
       transform: translateY(0px); }
     .productos_menu_nav ul li a {
       font-size: 0.8rem; }
-  /* ----------------- PAGE / Index ------------------ */
   .productos_section .card__productos:hover {
     scale: 100%;
     box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.7); }
@@ -793,30 +823,16 @@ footer {
   #titulo_main-h2 {
     font-size: 1rem;
     margin-inline: 9px; }
-  .index__servicios-titulos {
+  .comentarios__title {
     text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 3rem;
-    text-transform: uppercase; }
-  .index__servicios .index__banner-servicios {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto; }
-    .index__servicios .index__banner-servicios .index__banner-CardServicios {
-      margin-bottom: 30px;
-      transition: all 0.5s ease;
-      border: #000000 1px solid; }
-      .index__servicios .index__banner-servicios .index__banner-CardServicios:hover {
-        transform: translateY(35px);
-        border: #E63E8E 1px solid;
-        box-shadow: 0 5px 20px 5px black; }
-  .comentarios .comentarios__content .card__comentario {
+    font-size: 1.5rem; }
+  .comentarios__content .card__comentario {
     padding: 30px;
     border: #747474 1px solid;
-    border-radius: 15px; }
+    border-radius: 15px;
+    margin: 5px 5%; }
+  .index__servicios-banner {
+    padding: 0px 10%; }
   /* ----------------- PAGE / Wonder Shop ------------------ */
   #titulo__wondershop {
     padding-block: 0;
@@ -845,4 +861,7 @@ footer {
     .tag__marcas img {
       padding: 20px 0;
       margin: 0 100%;
-      scale: 65%; } }
+      scale: 65%; }
+  /* ----------------- Footer ------------------ */
+  footer .DerechosReservados {
+    font-size: 0.9rem; } }

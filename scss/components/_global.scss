@@ -1,5 +1,5 @@
 // ----------------------------------------
-// Proyect by Maiker Obando - Wash Wonder 
+// Proyect by Maiker Obando - Wash Wonder
 // -----------------------------------------
 
 
@@ -32,7 +32,7 @@ html {
 
 body {
     font-family: "Montserrat-Ligth"; color: white;
-    background-color: #141414;
+    background-color: #161616;
 }
 
 p {
@@ -59,14 +59,14 @@ ul {
 }
 
 a {
-    text-decoration: none;    
+    text-decoration: none;
 }
 
 output {
     display: inline-block;
 }
 
-address {    
+address {
     font-style: normal;
     line-height: inherit;
 }
@@ -79,3 +79,26 @@ select:disabled {
     opacity: 1;
 }
 
+
+// extend
+.container_1100 {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.container_1200 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+// mixin
+@mixin template_grid($columns) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);     
+}
+
+@mixin template_flex($valueJustify) {
+    display: flex;
+    align-items: center; 
+    justify-content: $valueJustify;     
+}

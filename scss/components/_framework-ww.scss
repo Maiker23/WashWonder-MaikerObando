@@ -85,8 +85,15 @@
 
 .bg_gradient-ww-fucsia {
     background-image: linear-gradient(to left, #E63E8E, #9e35ac);
+    height: 5px;
 }
 
 .bg_gradient-ww-fucsia-top {
     background-image: linear-gradient(to top, #E63E8E, #9625a5);
+    height: 5px;
+}
+
+.bg_gradient-ww-colores {
+    background-image: linear-gradient(to left, #E63E8E, #6D4795, #4A77BA, #3CBDE4, #56B584);
+    height: 5px;
 }

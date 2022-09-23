@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://maiker23.github.io/WashWonder-MaikerObando/</loc>
+  <lastmod>2022-09-20T04:42:41+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://maiker23.github.io/WashWonder-MaikerObando/index.html</loc>
+  <lastmod>2022-09-20T04:42:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://maiker23.github.io/WashWonder-MaikerObando/pages/servicios.html</loc>
+  <lastmod>2022-09-20T04:42:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://maiker23.github.io/WashWonder-MaikerObando/pages/wonder-shop.html</loc>
+  <lastmod>2022-09-20T04:42:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://maiker23.github.io/WashWonder-MaikerObando/pages/cursos.html</loc>
+  <lastmod>2022-09-20T04:42:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://maiker23.github.io/WashWonder-MaikerObando/pages/contactos.html</loc>
+  <lastmod>2022-09-20T04:42:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

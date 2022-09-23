@@ -11,13 +11,10 @@
 }
 
 .servicios {
-    
-    display: flex;
-    flex-wrap: wrap;
+    @include template_flex(center);    
+    flex-wrap: wrap;    
     margin: 0 auto;
-    margin-block: 80px;
-    align-items: center;
-    justify-content: center;   
+    margin-block: 80px;     
 
     &__card {
         background-color: rgb(56, 56, 56);

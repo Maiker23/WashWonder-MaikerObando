@@ -48,8 +48,7 @@
     z-index: 3;
 
     & ul {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        @include template_grid(4);
         gap: 5px;
         max-width: 1000px;
         margin: 0px auto;
@@ -95,8 +94,7 @@
 
 /* tarjetas de productos */
 .productos_section {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    @include template_grid(4);
     gap: 5px;
     max-width: 1000px;
     margin: 0 auto;
