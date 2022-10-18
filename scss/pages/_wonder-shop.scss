@@ -106,16 +106,16 @@
         border-radius: 5px;
         text-align: center;
         box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 1);
-        transition: all 0.3s;         
+        transition: all 0.3s ease-in-out;         
     
         &:hover {
             background-color: rgba(255, 255, 255, 1);
             border: #E63E8E 2px solid;
-            scale: 110%;
+            scale: 105%;
             box-shadow: 1px 1px 15px 9px rgba(0, 0, 0, 0.8);
         }
     
-            &-marca {
+            &-marca {                
                 font-size: 1.4rem;
                 line-height: 1.3rem;
                 color: #242424;
@@ -124,7 +124,7 @@
             }
             
         &-header p {
-            font-size: 1rem;
+            font-size: 0.9rem;
             color: #292929;
             padding: 4px;
         }
@@ -136,11 +136,12 @@
         
         &-precio {
             color: #ec1492;
+            font-size: 1.4rem;
         }
     
         &-unidad {
             color: #0e0e0e;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             margin-bottom: 8px;
         }
         

@@ -524,11 +524,11 @@ select:disabled {
     border-radius: 5px;
     text-align: center;
     box-shadow: 1px 1px 5px 1px black;
-    transition: all 0.3s; }
+    transition: all 0.3s ease-in-out; }
     .productos_section .card__productos:hover {
       background-color: white;
       border: #E63E8E 2px solid;
-      scale: 110%;
+      scale: 105%;
       box-shadow: 1px 1px 15px 9px rgba(0, 0, 0, 0.8); }
     .productos_section .card__productos-marca {
       font-size: 1.4rem;
@@ -537,17 +537,18 @@ select:disabled {
       padding: 4px;
       margin-top: 12px; }
     .productos_section .card__productos-header p {
-      font-size: 1rem;
+      font-size: 0.9rem;
       color: #292929;
       padding: 4px; }
     .productos_section .card__productos-foto {
       width: 100%;
       padding: 10px; }
     .productos_section .card__productos-precio {
-      color: #ec1492; }
+      color: #ec1492;
+      font-size: 1.4rem; }
     .productos_section .card__productos-unidad {
       color: #0e0e0e;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       margin-bottom: 8px; }
     .productos_section .card__productos-logo-mercadolibre {
       background-color: #FFE900;
