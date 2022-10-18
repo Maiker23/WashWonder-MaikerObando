@@ -3,84 +3,153 @@
 // -----------------------------------------
 
 
-.section-contacto {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0px;
-    margin: 0px auto;
+.encuentranos__icon {
+    background-image: url("../assets/imagenes/cursos/banner-cursos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    height: 27rem;
+    display: flex;     
+    justify-content: center;
+    align-items: center;   
+    
+    &-container {
+        text-align: center;
+
+        & img{
+            width: 150px;
+            margin: 20px;
+            animation: mapa-in 0.7s ease;
+            
+
+            @keyframes mapa-in {
+                0% {
+                    scale: 0%;
+                    opacity: 0%;
+                }                
+                100% {
+                    scale: 100%;
+                    opacity: 100%;
+                }
+            }
+        }
+
+        & h3 {
+            padding: 10px;
+            letter-spacing: 0.02rem; 
+        }
+
+        & p {
+            padding: 10px;            
+            animation: telefonos-in 1s ease;
+            letter-spacing: 0.4rem;
+
+            @keyframes telefonos-in {
+                0% {
+                    letter-spacing: 0rem;
+                }
+                20% {
+                    letter-spacing: 0rem;
+                }
+                100% {
+                    letter-spacing: 0.4rem;
+                }
+            }
+        }
+    }        
+}
+
+.section__contacto {
     align-items: center;
+    margin-inline: 4%;
+    margin-block: 130px;
+
+    & h2 {
+        text-align: center;
+        font-size: 2rem;
+        padding-bottom: 20px;        
+        color: #50B58B;
+    }
+
+    & p {
+        text-align: center;
+    }
+
+
+    &-form { 
+        display: flex;              
+        max-width: 600px;
+        text-align: center;
+        margin: 20px auto;        
+
+        textarea {
+            font-family: "Montserrat-Ligth";
+            font-size: 0,8rem;
+            width: 100%;
+            padding: 10px;
+            margin-block: 20px;
+            border: 3px solid black;
+            outline: none;
+            border-radius: 10px;            
+            background-color: rgb(223, 223, 223);
+            transition: all 0.3s ease;
+    
+            &:focus {
+                border: 3px solid #ec1492;
+                background-color: white;
+                color: black;
+                font-weight:bold
+            }
+        }
+    
+        input {
+            font-family: "Montserrat-Ligth";
+            font-size: 0,8rem;            
+            padding: 10px;           
+            border: 3px solid black;
+            border-radius: 10px;  
+            outline: none;
+            width: 100%;            
+            background-color: rgb(223, 223, 223);
+            transition: all 0.3s ease;
+    
+            &:focus {
+                border: #ec1492 3px solid;
+                background-color: white;
+                color: black;
+                font-weight:bold;                
+            }
+        }
+    
+        #button-enviar {
+            width: 100%;
+            background-color:#56B584;
+            color: white;
+            font-family: "Montserrat-Bold";
+            border: 1px solid #000000;
+            border-radius: 5px;
+            outline: none;                      
+            padding: 10px;
+            transition: all 0.3s ease-in-out;
+            letter-spacing: 0rem;
+        
+            &:hover {
+                background-color: #ec1492;
+                letter-spacing: 0.25rem;
+            }
+        }
+    }
 }
 
-.div-contacto {
-    text-align: center;
-}
 
-.div-contacto img{
-    width: 10rem;
-    margin: 20px;
-}
 
-.div-formulario h2 {
-    text-align: center;
-    font-size: 1.7rem;
-    padding: 25px;
-    margin-top: 15px;
-    color: #50B58B;
-}
 
-.formulario-datos form {
-    display: block;
-    max-width: 500px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
 
-.formulario-datos textarea {
-    font-family: "Montserrat-Ligth";
-    font-size: 0,8rem;
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #000000;
-    outline: none;
-    margin: 10px;
-    background-color: #d5d5d5;
-    transition: all 0.4s;
-}
 
-.formulario-datos textarea:focus {
-    border: 2px solid #ec1492;
-    background-color: white;
-}
 
-.formulario-datos input {
-    font-family: "Montserrat-Ligth";
-    font-size: 0,8rem;
-    padding: 10px;
-    border: 2px solid #000000;
-    outline: none;
-    width: 100%;
-    margin: 10px;
-    background-color: #d5d5d5;
-    transition: all 0.4s;
-}
 
-.formulario-datos input:focus {
-    border: #ec1492 2px solid;
-    background-color: white;
-}
 
-#button-enviar {
-    width: 100%;
-    background-color:#56B584;
-    color: white;
-    font-family: "Montserrat-Bold";
-    border: 1px solid #000000;
-    outline: none;
-    border-radius: 3px;
-    margin: 10px;
-    padding: 10px;
-}
 
-#button-enviar:hover {
-    background-color: #482464;
-}
+
+

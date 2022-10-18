@@ -1,6 +1,18 @@
 
 @media (max-width: 1000px) {
     /* ----------------- PAGE - Index ------------------ */
+    .main__banner {
+        .titulo_main {
+            &-h1 {
+                font-size: 2.4rem; 
+            }
+            &-h2 {
+                font-size: 1.2rem;
+                margin-inline: 2px; 
+            }
+        }
+    }
+    
     .index__servicios {       
         &-titulos {            
             font-size: 1.4rem;                   
@@ -30,8 +42,7 @@
     }
     /* ----------------- PAGE / Cursos ------------------ */
     .section_cursos {
-        margin: auto 1%;
-        margin-bottom: 90px;
+        margin: 60px 2%;
     }
 }
 
@@ -82,29 +93,31 @@
 
 /* ----------------- PAGE / Cursos ------------------ */
     .section_cursos {
-        max-width: 90%;
-        margin: 0 auto;
-        margin-bottom: 100px;
+        max-width: 94%;
+        margin: 50px auto;        
+
+        .div-background {
+            .curso__card {
+                display: grid;
+                
+                & img {
+                    max-width: 100%;
+                }
+                
+                &-contenido {
+                    margin-left: 0px;
+                    margin-top: 0.9rem;
+
+                    &-boton {
+                        margin: 0 auto;
+                        margin-top: 25px;
+                    }
+                } 
+            }    
+        }
     }
 
-    .curso__card {
-        display: grid;
-
-        & img {
-            max-width: 100%;
-        }
-
-        &-boton {
-            margin: 0 auto;
-            margin-top: 25px;
-        }
-
-        .curso__card-contenido {
-            margin-left: 0px;
-            margin-top: 0.9rem;
-        }
-    }
-
+    
 /* ----------------- WhastApp ------------------ */    
     .whatsapp-qr {
         display: none;
@@ -123,6 +136,18 @@
 
 @media (max-width: 720px) {
 /* ----------------- PAGE - Index ------------------ */
+    .main__banner {
+        .titulo_main {
+            &-h1 {
+                font-size: 2.1rem; 
+            }
+            &-h2 {
+                font-size: 1rem;
+                margin-inline: 2px; 
+            }
+        }
+    }
+
     .index__servicios {       
         &-titulos {            
             font-size: 1.2rem;                   
@@ -150,6 +175,7 @@
                 &:hover {
                     transform: translateY(0px);
                 }
+
                 & a {
                     font-size: 0.8rem;
                 }
@@ -172,10 +198,22 @@
     }
 
 /* ----------------- PAGE / Cursos ------------------ */
-    .title-cursos {
-        font-size: 2.0rem;
-        padding: 2px 3px;
-        margin-top: 35px;
+    .header__cursos { 
+        &-container {
+            & h1 {
+                font-size: 2rem;           
+            } 
+        }    
+    }
+    .section_cursos { 
+        .div-background {
+            .curso__card {
+                &-destacado {                    
+                    width: 50px;
+                    
+                }
+            }
+        }
     }
 
 /* ----------------- Tag Marcas ------------------ */
@@ -197,21 +235,58 @@
 
 
 @media (max-width: 500px) {
-/* ----------------- PAGE / Index ------------------ */     
-    .icon__section {
-        grid-template-columns: repeat(2, 1fr);
+/* ----------------- PAGE / Index ------------------ */  
+    .main__banner {
+        height: 90vh;
+        .titulo_main {
+            &-h1 {
+                font-size: 1.7rem;
+                margin-inline: 1px;
+                line-height: 30px;  
+            }
+            &-h2 {
+                font-size: 0.9rem;
+                margin-inline: 2px; 
+            }
+        }
     }
 
-    #titulo_main {
-        &-h1 {
-            font-size: 2.1rem; 
+    .icon__section {
+        grid-template-columns: repeat(2, 1fr);
+
+        .background-servicios {       
+            opacity: 100%;
+
+            &:hover {
+                opacity: 80%;
+            }
         }
-        &-h2 {
-            font-size: 1rem;
-            margin-inline: 9px; 
+
+        .background-shop {       
+            opacity: 100%;
+            
+            &:hover {
+                opacity: 80%;
+            }
+        }
+
+        .background-cursos {       
+            opacity: 100%;
+            
+            &:hover {
+                opacity: 80%;
+            }
+        }
+
+        .background-contacto {       
+            opacity: 100%;
+            
+            &:hover {
+                opacity: 80%;
+            }
         }
     }
-   
+
     .comentarios {
         &__title {
             text-align: center;
@@ -231,9 +306,10 @@
     .index__servicios {       
         &-banner{
             padding: 0px 10%;
-        }
-    
+        }    
     }
+/* ----------------- PAGE / Index ------------------ */ 
+
 /* ----------------- PAGE / Wonder Shop ------------------ */  
     #titulo__wondershop {
         padding-block: 0;
