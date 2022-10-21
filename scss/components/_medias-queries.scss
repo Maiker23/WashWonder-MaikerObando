@@ -12,6 +12,10 @@
             }
         }
     }
+
+    .contenedor__detailing {       
+        margin: 80px 10px;
+    } 
     
     .index__servicios {       
         &-titulos {            
@@ -286,6 +290,18 @@
             }
         }
     }
+
+    .contenedor__detailing {
+        display: block;        
+        padding: 30px;
+        margin: 80px 10px;
+
+        & hr {
+            margin-block: 1rem;
+            margin-inline: auto;
+            opacity: 20%;
+        }
+    } 
 
     .comentarios {
         &__title {

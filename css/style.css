@@ -273,7 +273,6 @@ select:disabled {
   margin: 80px auto; }
   .contenedor__detailing hr {
     margin-inline: 20px;
-    padding: auto;
     opacity: 20%; }
   .contenedor__detailing h2 {
     color: #E63E8E;
@@ -965,6 +964,8 @@ footer {
   .main__banner .titulo_main-h2 {
     font-size: 1.2rem;
     margin-inline: 2px; }
+  .contenedor__detailing {
+    margin: 80px 10px; }
   .index__servicios-titulos {
     font-size: 1.4rem; }
   .index__servicios-banner-card:hover {
@@ -1100,6 +1101,14 @@ footer {
       opacity: 100%; }
       .icon__section .background-contacto:hover {
         opacity: 80%; }
+  .contenedor__detailing {
+    display: block;
+    padding: 30px;
+    margin: 80px 10px; }
+    .contenedor__detailing hr {
+      margin-block: 1rem;
+      margin-inline: auto;
+      opacity: 20%; }
   .comentarios__title {
     text-align: center;
     font-size: 1.5rem; }
