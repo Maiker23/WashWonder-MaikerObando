@@ -107,12 +107,12 @@ select:disabled {
     max-height: 100%;
     z-index: 2;
     transform: rotateY(90deg);
-    animation: logo-hexa-ww 2s both;
-    transition: all 3s ease;
+    animation: logo-hexa-ww 1.8s both;
+    transition: all 2s ease;
     padding: 5vh;
     margin: 15px; }
     .main__banner-logo:hover {
-      scale: 108%; }
+      scale: 110%; }
 
 @keyframes logo-hexa-ww {
   0% {
@@ -680,6 +680,16 @@ select:disabled {
       margin: 1rem;
       text-shadow: #000000bd 2px 2px 6px; }
 
+.section__descuento {
+  background-image: linear-gradient(to left, #E63E8E, #9625a5); }
+  .section__descuento h3 {
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center; }
+  .section__descuento-50 {
+    font-size: 1.2rem;
+    font-family: "Montserrat-Black"; }
+
 .section_cursos {
   max-width: 1000px;
   margin: 100px auto; }
@@ -689,7 +699,7 @@ select:disabled {
     padding: 20px;
     margin: 25px 0;
     border: #000000 2px solid;
-    transition: all 0.3s; }
+    transition: all 0.3s ease; }
     .section_cursos .div-background:hover {
       background-color: white;
       border: #ec1492 2px solid; }
@@ -735,9 +745,38 @@ select:disabled {
             background-color: #ec1492;
             letter-spacing: 0.05rem; }
   .section_cursos .div-background-destacado {
-    border: #ec1492 2px solid; }
+    border: #ec1492 2px solid;
+    transition: all 0.3s ease-in-out; }
     .section_cursos .div-background-destacado:hover {
       box-shadow: #ec149280 1px 1px 25px 5px; }
+
+.section__certificado {
+  background-image: linear-gradient(to left, #E63E8E, #9e35ac);
+  padding: 50px 10px; }
+  .section__certificado-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto; }
+  .section__certificado-content {
+    display: inline-block;
+    margin: 20px; }
+    .section__certificado-content h4 {
+      font-size: 1.8rem; }
+    .section__certificado-content p {
+      margin-top: 1rem; }
+    .section__certificado-content a {
+      color: white;
+      font-weight: bold;
+      font-style: oblique; }
+    .section__certificado-content-strong {
+      font-family: "Montserrat-Black"; }
+  .section__certificado img {
+    box-shadow: #fa2fa5f8 1px 1px 35px 5px;
+    max-width: 400px;
+    margin: 20px;
+    transition: all 0.3s ease-in-out; }
+    .section__certificado img:hover {
+      box-shadow: #a80c67f8 2px 2px 50px 5px; }
 
 .ff-ww-Montserrat-black {
   font-family: "Montserrat-Black"; }
@@ -1020,6 +1059,8 @@ footer {
         .section_cursos .div-background .curso__card-contenido-boton {
           margin: 0 auto;
           margin-top: 25px; }
+  .section__certificado-container {
+    display: block; }
   /* ----------------- WhastApp ------------------ */
   .whatsapp-qr {
     display: none; }
@@ -1139,6 +1180,11 @@ footer {
     z-index: 0; }
     .productos_menu_nav ul {
       display: block; }
+  /* ----------------- PAGE / Cursos ------------------ */
+  .section__certificado-content h4 {
+    font-size: 1.6rem; }
+  .section__certificado img {
+    max-width: 90%; }
   /* ----------------- PAGE / Contacto ------------------ */
   .formulario-datos form {
     max-width: 90%; }

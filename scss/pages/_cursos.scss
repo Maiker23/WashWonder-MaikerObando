@@ -29,6 +29,20 @@
     }    
 }
 
+.section__descuento {
+    background-image: linear-gradient(to left, #E63E8E, #9625a5);
+           
+    & h3 {        
+        font-size: 1rem;        
+        padding: 10px;
+        text-align: center;        
+    }
+
+    &-50 {
+        font-size: 1.2rem;        
+        font-family: "Montserrat-Black";
+    }
+}
 
 .section_cursos {    
     max-width: 1000px;
@@ -40,7 +54,7 @@
         padding: 20px;
         margin: 25px 0;
         border: #000000 2px solid;
-        transition: all 0.3s;
+        transition: all 0.3s ease;
         
         &:hover {
             background-color: rgb(255, 255, 255);
@@ -110,10 +124,56 @@
     }
 
     .div-background-destacado {
-        border: #ec1492 2px solid;  
+        border: #ec1492 2px solid;
+        transition: all 0.3s ease-in-out;  
 
         &:hover {
             box-shadow: #ec149280 1px 1px 25px 5px;
         }
+    }    
+}
+
+.section__certificado {    
+    background-image: linear-gradient(to left, #E63E8E, #9e35ac); 
+    padding: 50px 10px;
+
+    &-container {
+        display: flex;        
+        max-width: 1000px;
+        margin: 0 auto;
     }
+
+    &-content {        
+        display: inline-block;
+        margin: 20px;
+
+        & h4 {
+            font-size: 1.8rem;
+        }
+
+        & p {
+            margin-top: 1rem;
+        }
+
+        & a {
+            color: white;
+            font-weight: bold;
+            font-style: oblique;
+        }
+
+        &-strong {
+            font-family: "Montserrat-Black";
+        }
+    }
+
+    & img {  
+        box-shadow: #fa2fa5f8 1px 1px 35px 5px;
+        max-width: 400px;
+        margin: 20px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            box-shadow: #a80c67f8 2px 2px 50px 5px;
+        }
+    }        
 }

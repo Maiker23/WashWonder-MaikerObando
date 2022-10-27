@@ -121,7 +121,13 @@
         }
     }
 
+    .section__certificado { 
+        &-container {
+            display: block;            
+        }
+    }        
     
+
 /* ----------------- WhastApp ------------------ */    
     .whatsapp-qr {
         display: none;
@@ -357,7 +363,21 @@
             display: block;
         }
     }
- 
+    
+/* ----------------- PAGE / Cursos ------------------ */ 
+    .section__certificado { 
+        &-content { 
+            & h4 {
+                font-size: 1.6rem;
+            }
+        }
+        
+        & img {
+            max-width: 90%;
+        }        
+        
+    }
+
 /* ----------------- PAGE / Contacto ------------------ */      
     .formulario-datos form {
         max-width: 90%;
